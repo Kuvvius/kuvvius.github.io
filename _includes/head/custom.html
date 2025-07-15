@@ -3,3 +3,48 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous" />
+<style>
+    /* 调整主内容区域的边距以匹配朋友的网站 */
+    .article-wrap {
+      margin-top: 100px;
+      /* 注意：-300px 的 margin-right 可能会导致在小屏幕上出现水平滚动条，请谨慎使用 */
+      /* 建议先尝试一个较小的负值，或者只调整 margin-top */
+      margin-right: -100px; /* 尝试一个较小的负值，例如 -100px */
+    }
+  
+    /* 调整侧边栏（如果仍有残留样式） */
+    .sidebar {
+        margin-top: 90px; /* 匹配朋友网站的 article-author-top 的 margin-top */
+    }
+  
+    /* 自定义图标大小，如果你觉得 font size="6px" 不够灵活 */
+    .article-author-top .ai,
+    .article-author-top .fab,
+    .article-author-top .fas {
+        font-size: 2.5rem; /* 例如，调整图标大小 */
+        margin: 0 5px; /* 调整图标间距 */
+    }
+  
+    /* 朋友网站的顶部导航栏有特殊的样式 */
+    /* Minimal Mistakes 默认导航栏样式与朋友的旧主题不同，以下是尝试模拟 */
+    .masthead__menu {
+        display: flex;
+        justify-content: center; /* 导航居中 */
+        padding: 1rem 0; /* 调整上下间距 */
+    }
+    .masthead__menu .site-title {
+        font-size: 2rem; /* 调整标题大小 */
+        font-weight: bold;
+    }
+    .masthead__menu-item a {
+        font-size: 1.1rem; /* 调整导航链接文字大小 */
+        font-weight: normal;
+        padding: 0.5rem 1rem; /* 调整导航链接内边距 */
+    }
+    /* 朋友网站的导航栏下有一条细线，Minimal Mistakes 默认没有，可以尝试添加 */
+    .masthead {
+        border-bottom: 1px solid #e0e0e0; /* 添加底部细线 */
+    }
+  
+  </style>

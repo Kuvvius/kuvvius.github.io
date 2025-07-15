@@ -13,18 +13,18 @@ locale                   : "en-US"
 title                    : "Jiawei Gu (顾嘉炜)" 
 title_separator          : "-"
 name                     : "Jiawei Gu" 
-description              : "MSc Student in Computer Science | Natural Language Processing & Multimodal AI" # ⭐ 替换：你的简介或网站标语
-url                      : "https://kuvvius.github.io/" # 
+description              : "MSc Student in Computer Science | Natural Language Processing & Multimodal AI"
+url                      : "https://kuvvius.github.io/"
 baseurl                  : # 保持空，GitHub Pages 不需要 baseurl
-repository               : "Kuvvius/kuvvius.github.io" #
+repository               : "Kuvvius/kuvvius.github.io"
 teaser                   : # 保持空
 logo                     : # 保持空
 masthead_title           : # 保持空
 breadcrumbs              : # 保持空
 words_per_minute         : 200
 enable_copy_code_button  : # 保持空
-copyright                : "© 2025 Jiawei Gu." # 
-copyright_url            : "https://github.com/Kuvvius/kuvvius.github.io" # 
+copyright                : "© 2025 Jiawei Gu."
+copyright_url            : "https://kuvvius.github.io/" # ⭐ 已修改：版权链接指向网站主页
 
 
 comments:
@@ -37,7 +37,7 @@ facebook:
   username               : # 保持空
   app_id                 : # 保持空
   publisher              : # 保持空
-og_image                 : "https://你的GitHub用户名.github.io/assets/images/default-thumb.png" # ⭐ 替换：社交媒体分享时显示的默认图片，替换为你的实际网站地址和图片路径。
+og_image                 : "https://kuvvius.github.io/assets/images/default-thumb.png" # ⭐ 替换：社交媒体分享时显示的默认图片，替换为你的实际网站地址和图片路径。
 
 # Social Profiles (高级结构化数据，保持默认或注释)
 social:
@@ -54,29 +54,29 @@ analytics:
 
 # Site Author (网站作者信息，显示在侧边栏或页面底部)
 author:
-  name             : "Jiawei Gu" # 
-  avatar           : "/assets/images/avatar.jpg" # ⭐ 替换：你的头像图片路径，务必与你上传的路径和文件名一致
-  bio              : "MSc student in Computer Science at Sun Yat-sen University." # ⭐ 替换：更详细的个人简介
-  location         : "Guangzhou, China" # ⭐ 替换：你的所在地
-  email            : "Kuvvius@gmail.com" # ⭐ 替换：你的邮箱
+  name             : "Jiawei Gu"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "MSc student in Computer Science at Sun Yat-sen University."
+  location         : "Guangzhou, China"
+  email            : "Kuvvius@gmail.com"
   links: # 侧边栏的社交媒体链接和图标
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square" # Font Awesome 邮箱图标
-      url: "mailto:Kuvvius@gmail.com" # ⭐ 替换：你的邮箱链接
+      url: "mailto:Kuvvius@gmail.com"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square" # Academicons Google Scholar 图标
-      url: "https://scholar.google.com/citations?user=7p8yEHAAAAAJ&hl=En" #
+      url: "https://scholar.google.com/citations?user=7p8yEHAAAAAJ&hl=En"
     - label: "GitHub"
       icon: "fab fa-fw fa-github" # Font Awesome GitHub 图标
-      url: "https://github.com/Kuvvius" #
+      url: "https://github.com/Kuvvius"
     - label: "X"
       icon: "fab fa-fw fa-x-twitter" # Font Awesome X (Twitter) 图标
-      url: "https://x.com/Kuvvius" # 
+      url: "https://x.com/Kuvvius"
 
 # Site Footer (网站底部)
 footer:
-  links: 
-  since: "2025" # ⭐ 替换：你的网站创建年份或你开始研究的年份
+  links:
+  since: "2025"
 
 # Reading Files
 include:
@@ -217,6 +217,6 @@ defaults:
     values:
       layout: page # 确保主页使用 page 布局
       permalink: / # 确保主页的固定链接是根目录
-      author_profile: true # 在主页也显示作者简介
+      author_profile: false # ⭐ 已修改：禁用 Minimal Mistakes 自带的作者简介，以便你手动添加
       comments: false # 默认为页面禁用评论
       share: false # 默认不显示分享按钮
