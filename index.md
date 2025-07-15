@@ -1,60 +1,116 @@
 ---
 layout: page
-title: About Me
+title: About Me – Jiawei Gu
 permalink: /
 ---
 
-# 关于我 (About Me)
+# About Me
 
-我是一名**[你的头衔，例如：软件工程师、数据科学家、学生]**。我热衷于**[你的兴趣或研究方向，例如：人工智能、Web 开发、生物信息学]**。
+[cite_start]I am Jiawei Gu, an MSc student in Computer Science at Sun Yat-sen University, expected to graduate in June 2025[cite: 1]. 
 
-目前，我正在**[你的机构名称，例如：XYZ 公司、清华大学]**从事**[你的具体工作或研究内容，例如：开发新的算法、研究机器学习模型]**。
+[cite_start]My research journey started later than usual due to my volunteer service experience[cite: 20]. [cite_start]However, I possess an unparalleled passion for exploration and scientific inquiry[cite: 21]. [cite_start]Over the past year of dedicated research study, I have solidified my aspiration to contribute to the field of Natural Language Processing (NLP)[cite: 22]. [cite_start]I am actively pursuing this goal, much like my unwavering commitment to morning runs over the past five years[cite: 22]. [cite_start]I firmly believe that "pain is inevitable, suffering is optional" and I am ready to embrace the challenges that come with pursuing what I desire[cite: 23]. [cite_start]Specifically, I have delved into research on natural language and multi-modal approaches, shaping me into an independent researcher with clear ideas about future research directions[cite: 24].
 
----
-
-# 最新动态 (News)
-
-* **2025年7月：** 我的新项目 **[项目名称]** 已经上线了！[点击查看](你的项目链接)。
-* **2025年6月：** 参加了 **[会议名称]**，并在会上发表了关于 **[主题]** 的演讲。
-* **2025年5月：** 我的文章 **[文章标题]** 已在 **[期刊/会议名称]** 上发表。[点击阅读](你的文章链接)。
+My research interests include:
+* [cite_start]Scaling of Text/Multimodal Reasoning [cite: 24]
+* [cite_start]Efficient Learning for Training and Inference [cite: 24]
+* [cite_start]Domain Knowledge Injection [cite: 24]
 
 ---
 
-# 出版物/项目 (Publications / Projects)
+# Education
 
-* **[论文/项目标题 1]**
-    * **作者**：你的名字, 其他合作者...
-    * **发布于**：[会议/期刊名称或项目地址](链接地址)
-    * [PDF](你的PDF链接) &nbsp; [代码](你的代码链接)
+* **Sun Yat-sen University**
+    * [cite_start]Master of Science in Computer Science. [cite: 2]
 
-* **[论文/项目标题 2]**
-    * **作者**：你的名字, 其他合作者...
-    * **发布于**：[会议/期刊名称或项目地址](链接地址)
-    * [PDF](你的PDF链接) &nbsp; [代码](你的代码链接)
+
+* **Sun Yat-sen University**
+    * [cite_start]Bachelor of Information Management and Information System. [cite: 2]
 
 ---
 
-# 服务/经历 (Services / Experiences)
+# Experience
 
-* **审稿人/志愿者**：**[会议/期刊名称 1]**, **[会议/期刊名称 2]**
-* **职位**：**[兼职工作或社团职位]** 在 **[机构/组织名称]**
+* [cite_start]**Shanghai AILab** [cite: 3]
+    * NLP Research Intern. [cite_start]Supervisor: Prof. Yu Cheng [cite: 3]
+    * [cite_start]October 2024 - Present [cite: 3]
+    * [cite_start]Shanghai, China [cite: 3]
+
+* [cite_start]**Tencent** [cite: 3]
+    * [cite_start]NLP Research Intern. [cite: 3]
+    * [cite_start]May 2024 - September 2024 [cite: 3]
+    * [cite_start]Shenzhen, China [cite: 3]
+
+* [cite_start]**International Digital Economy Academy (IDEA) Lab** [cite: 3]
+    * [cite_start]NLP Research Intern. [cite: 3]
+    * [cite_start]May 2023 - October 2024 [cite: 3]
+    * [cite_start]Remote [cite: 3]
+
+* [cite_start]**SenseTime Research Institute** [cite: 3]
+    * [cite_start]NLP Research Intern. [cite: 3]
+    * [cite_start]November 2023 - April 2024 [cite: 3]
+    * [cite_start]Shanghai [cite: 3]
 
 ---
 
----
+# News
 
-## 如何使用这段内容来预览
-
-1.  **打开你的 GitHub Pages 仓库**：在浏览器中打开 `https://github.com/你的GitHub用户名/你的GitHub用户名.github.io`。
-2.  **找到 `index.md` 文件**：在文件列表中找到 `index.md` 文件并点击它。
-3.  **编辑 `index.md`**：点击文件内容区域右上角的铅笔图标（**"Edit this file"**）。
-4.  **粘贴内容**：**删除 `index.md` 中原有的所有内容**，然后将上面提供的简洁版内容完整地粘贴进去。
-5.  **提交更改**：拉到页面底部，在 "Commit changes" 部分填写一个简短的描述（例如 "Initial content for preview"），然后点击绿色的 **"Commit changes"** 按钮。
+* [cite_start]**July 2025:** My paper, "[EMMA: An Enhanced MultiModal Reasoning Benchmark](YOUR_EMMA_ARXIV_LINK)"[cite: 6], has been accepted to ICML 2025 as an Oral presentation!
+* [cite_start]**July 2025:** My paper, "[Boosting Decision-Making Ability of LLMs with Speculative Reward Model Cost-Effectively](YOUR_SRM_ARXIV_LINK)"[cite: 9], has been accepted to ACL 2025 as an Oral Presentation!
+* [cite_start]**July 2025:** My paper, "[Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience](YOUR_CORE_ARXIV_LINK)"[cite: 11], has been accepted to ACL 2025!
+* [cite_start]**July 2025:** My paper, "[MolRAG: Unlocking the Power of Large Language Models for Molecular Property Prediction](YOUR_MOLRAG_ARXIV_LINK)"[cite: 15], has been accepted to ACL 2025!
+* [cite_start]**November 2024:** My paper, "[CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models](YOUR_CMR_ARXIV_LINK)"[cite: 4], has been accepted to EMNLP 2024 as a First Author paper and selected for Oral Presentation!
 
 ---
 
-GitHub Pages 会在几分钟内自动构建你的网站。之后，你就可以访问 `https://你的GitHub用户名.github.io` 来预览你的个人主页了。
+# Publications
 
-预览时你会看到一个带有基本文字和标题的页面，你朋友网站的侧边栏、顶部导航、图片等元素会根据你之前在 `_config.yml` 和 `_data/navigation.yml` 中的配置显示。这个简洁版的内容可以帮助你快速看到页面结构。
+1.  [cite_start]**[CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models](YOUR_PAPER_PDF_LINK)** [cite: 4]
+    **Jiawei Gu***, et al.
+    [cite_start]EMNLP 2024, **First Author**, Oral Presentation. [cite: 4]
+    * [cite_start]**Contribution**: We attempt to re-visit the scaling behavior of LLMs under the hood of CPT, and introduce Critical Mixture Ratio (CMR) and a CMR scaling law, providing a predictive framework and practical guidelines for optimizing LLM training in specialized domains, ensuring both general and domain-specific performance while managing training resources effectively[cite: 5].
+    [PDF](YOUR_PAPER_PDF_LINK) &nbsp; [Slides](YOUR_SLIDES_LINK)
 
-接下来，你就可以根据这个结构，逐步替换成你自己的详细内容了。
+2.  **[Can MLLMs Reason/Think in Multimodality? [cite_start]EMMA: An Enhanced MultiModal Reasoning Benchmark](YOUR_PAPER_PDF_LINK)** [cite: 6]
+    **Jiawei Gu***, et al.
+    [cite_start]ICML 2025 (**Oral**), **First Author**. [cite: 6]
+    * [cite_start]**Contribution**: This work introduces EMMA, a benchmark designed to evaluate multimodal reasoning across mathematics, physics, chemistry, and coding[cite: 7]. [cite_start]EMMA features tasks requiring advanced visual manipulation and cross-modal reasoning, providing insights into the limitations of current MLLMs and emphasizing the need for improved architectures and training paradigms[cite: 8].
+    [PDF](YOUR_PAPER_PDF_LINK) &nbsp; [Homepage](YOUR_PAPER_HOMEPAGE_LINK) &nbsp; [Slides](YOUR_SLIDES_LINK)
+
+3.  [cite_start]**[Boosting Decision-Making Ability of LLMs with Speculative Reward Model Cost-Effectively](YOUR_PAPER_PDF_LINK)** [cite: 9]
+    **Jiawei Gu***, et al.
+    [cite_start]ACL 2025 (**Oral Presentation**), **First Author**. [cite: 9]
+    * [cite_start]**Contribution**: A Plug and Play framework with Speculative Reward Models (SRM), which simplifies the complex process of achieving an optimal balance between effectiveness and efficiency[cite: 10].
+    [PDF](YOUR_PAPER_PDF_LINK)
+
+4.  [cite_start]**[Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience](YOUR_PAPER_PDF_LINK)** [cite: 11]
+    **Jiawei Gu***, et al.
+    [cite_start]ACL 2025, **First Author**. [cite: 11]
+    * [cite_start]**Contribution**: A plug-and-play method, CoRE, is proposed to improve the reasoning ability on structured knowledge[cite: 12]. [cite_start]It is training-free, lifelong, and continuous[cite: 13].
+    [PDF](YOUR_PAPER_PDF_LINK)
+
+5.  [cite_start]**[A Survey on LLM-as-a-Judge](YOUR_PAPER_PDF_LINK)** [cite: 13]
+    **Jiawei Gu***, et al.
+    [cite_start]Preprint, **First Author**. [cite: 13]
+    * [cite_start]**Contribution**: This survey provides a comprehensive review of strategies to enhance the reliability of LLM-as-a-Judge systems, introduces a benchmark for systematic evaluation, and discusses practical applications, challenges, and future directions to guide research and deployment[cite: 14].
+    [PDF](YOUR_PAPER_PDF_LINK) &nbsp; [Homepage](YOUR_PAPER_HOMEPAGE_LINK)
+
+6.  [cite_start]**[MolRAG: Unlocking the Power of Large Language Models for Molecular Property Prediction](YOUR_PAPER_PDF_LINK)** [cite: 15]
+    Second Author.
+    [cite_start]ACL 2025. [cite: 15]
+
+7.  [cite_start]**[Scaling Reasoning, Losing Control: Evaluating Instruction Following in Large Reasoning Models](YOUR_PAPER_PDF_LINK)** [cite: 16]
+    Second Author.
+    [cite_start]Preprint. [cite: 16]
+
+8.  [cite_start]**[Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual Simulations](YOUR_PAPER_PDF_LINK)** [cite: 17]
+    Third Author.
+    [cite_start]Preprint. [cite: 17]
+    [PDF](YOUR_PAPER_PDF_LINK)
+
+9.  [cite_start]**[Full Front: Benchmarking MLLMs Across the Full Front-End Engineering Workflow](YOUR_PAPER_PDF_LINK)** [cite: 16]
+    Third Author.
+    [cite_start]Preprint. [cite: 16]
+    [PDF](YOUR_PAPER_PDF_LINK)
+
+---
+
