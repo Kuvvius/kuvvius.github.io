@@ -28,19 +28,7 @@ My research interests include:
 
 ---
 
-### Publications
-好的，我来帮你将这些 LaTeX 格式的出版物信息转换成你所期望的 Markdown/HTML 混合格式，使其看起来像你提供的“Guanzheng Chen”示例。
 
-我将主要做以下转换：
-
-  * 去除 LaTeX 命令，转换为 Markdown 和 HTML。
-  * 将标题、作者、会议信息格式化。
-  * 将链接转换为带有 `btn-links` 类的 HTML 按钮组。
-  * **不包含**每篇文章的“Contribution”详细描述，因为这在目标示例格式中没有体现。
-  * 处理作者名加粗和 `*` 标记。
-  * 确保内部文件路径使用 `relative_url`。
-
------
 
 ### Publications
 
