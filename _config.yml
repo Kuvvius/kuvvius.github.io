@@ -1,70 +1,111 @@
-# Site Settings
-locale: en-US # 网站语言，保持不变即可
-title: "Jiawei Gu (顾佳伟)" # 这是你的网站标题，会显示在浏览器标签页和网站头部
-name: "Jiawei Gu" # 你的名字
-description: "MSc Student in Computer Science | Natural Language Processing & Multimodal AI" # 你的简介或格言
-url: "https://你的GitHub用户名.github.io" # ⭐ 重要：把这里改成你的实际网站地址，例如 "https://jiaweigu.github.io"
-repository: "你的GitHub用户名/你的GitHub用户名.github.io" # GitHub 仓库名称，例如 "jiaweigu/jiaweigu.github.io"
-teaser: # 网站分享时的缩略图，留空或设置为默认图片路径
-og_image: https://你的GitHub用户名.github.io/images/default-thumb.png # 社交媒体分享图片路径，替换为你的实际地址
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
+title: Jiawei Gu (顾嘉炜)
+email: kuvvius@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Jiawei Gu's Homepage
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://kuvvius.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  jekyll
+port: 4567
 # Build settings
-markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Minimal Mistakes 主题版本，如果你是 Fork 的，可以删除这行或保持不变
-# 或者如果你是 Fork 的，通常不需要 remote_theme
-# theme: minimal-mistakes-jekyll # 如果你 Fork 并重命名了，这行可能已存在，保持不变
-
+# theme: minimal-mistakes-jekyll
 plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
 
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+
+owner:
+  name:           Jiawei gu
+  avatar:         myphoto.jpg
+  email:          kuvvius@gmail.com
+  twitter: kuvvius
+  github: kuvvius
+  scholar: https://scholar.google.com/citations?user=7p8yEHAAAAAJ&hl=En
+
+
+
+links:
+  - title: About Me
+    url: /
+  - title: Publications
+    url: /#publications
+  # - title: Projects
+  #   url: /projects/
+  # - title: Awards
+  #   url: /awards/
+  # - title: Hobbies
+  #   url: /hobbies/
+  - title: CV
+    url: /data/Resume_Guanzheng.pdf
+
+future: true
+highlighter: rouge
+# markdown: kramdown
+# markdown: redcarpet
+# pygments: true
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
 
 kramdown:
-  input: GFM
-  hard_wrap: false # This is important for wrapping long sentences
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-analytics:
-  provider: "google-gtag" # 或者 "google"
-  google:
-    tracking_id: "G-YOUR_TRACKING_ID" # ⭐ 如果你需要Google Analytics，请替换为你的跟踪ID。如果你不需要，可以删除 analytics 整个部分或注释掉。
+  # coderay:
+  #   coderay_line_numbers:
+  #   coderay_line_numbers_start: 1
+  #   coderay_tab_width: 4
+  #   coderay_bold_every: 10
+  #   coderay_css: class
 
-# Site Author
-author:
-  name: "Jiawei Gu" # 你的名字
-  avatar: "/assets/images/avatar.jpg" # ⭐ 你的头像图片路径，确保文件名和路径正确
-  bio: "MSc student in Computer Science at Sun Yat-sen University." # 简短的个人介绍
-  location: "Guangzhou, China" # 你的城市和国家
-  email: "Kuvvius@gmail.com" # ⭐ 你的邮箱
-  links: # 侧边栏的社交媒体链接和图标
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square" # 信封图标
-      url: "mailto:Kuvvius@gmail.com"
-    - label: "Google Scholar"
-      icon: "ai ai-google-scholar-square" # Google Scholar 图标
-      url: "YOUR_GOOGLE_SCHOLAR_LINK" # ⭐ 替换为你的 Google Scholar 主页链接
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github" # GitHub 图标
-      url: "https://github.com/你的GitHub用户名" # ⭐ 替换为你的 GitHub 主页链接
-    - label: "X" # Twitter 的新名称
-      icon: "fab fa-fw fa-x-twitter" # X (Twitter) 图标
-      url: "YOUR_TWITTER_LINK" # ⭐ 替换为你的 X (Twitter) 链接
 
-# Social Media Integration (用于社交媒体分享时的预览)
-twitter:
-  username: "@你的Twitter用户名" # ⭐ 替换为你的 Twitter 用户名 (如果有)
-  card: summary # 或 summary_large_image
-  image: https://你的GitHub用户名.github.io/images/default-thumb.png # ⭐ 社交媒体分享图片路径，替换为你的实际地址
+
+
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
