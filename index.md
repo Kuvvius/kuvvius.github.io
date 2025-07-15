@@ -17,40 +17,6 @@ My research interests include:
 
 ---
 
-# Education
-
-* **Sun Yat-sen University**
-    * [cite_start]Master of Science in Computer Science. [cite: 2]
-
-
-* **Sun Yat-sen University**
-    * [cite_start]Bachelor of Information Management and Information System. [cite: 2]
-
----
-
-# Experience
-
-* [cite_start]**Shanghai AILab** [cite: 3]
-    * NLP Research Intern. [cite_start]Supervisor: Prof. Yu Cheng [cite: 3]
-    * [cite_start]October 2024 - Present [cite: 3]
-    * [cite_start]Shanghai, China [cite: 3]
-
-* [cite_start]**Tencent** [cite: 3]
-    * [cite_start]NLP Research Intern. [cite: 3]
-    * [cite_start]May 2024 - September 2024 [cite: 3]
-    * [cite_start]Shenzhen, China [cite: 3]
-
-* [cite_start]**International Digital Economy Academy (IDEA) Lab** [cite: 3]
-    * [cite_start]NLP Research Intern. [cite: 3]
-    * [cite_start]May 2023 - October 2024 [cite: 3]
-    * [cite_start]Remote [cite: 3]
-
-* [cite_start]**SenseTime Research Institute** [cite: 3]
-    * [cite_start]NLP Research Intern. [cite: 3]
-    * [cite_start]November 2023 - April 2024 [cite: 3]
-    * [cite_start]Shanghai [cite: 3]
-
----
 
 # News
 
