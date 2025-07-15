@@ -4,18 +4,18 @@ title: About Me – Jiawei Gu
 permalink: /
 ---
 
----
-layout: custom_homepage
-permalink: /
----
 
 ### About Me
 
-I am now a first-year PhD candidate at [National University of Singapore](https://nus.edu.sg/) (NUS), supervised by Dr. [Michael Qizhe Shieh](https://michaelshieh.com/).
-My research is driven by the passion for advancing the edge intelligence of large language models (LLMs). I am particularly focused on the paradigm shift [from deep to long learning](https://hazyresearch.stanford.edu/blog/2023-03-27-long-learning), aiming to enhance LLM capabilities by learning effectively from substantial context. My recent work concentrates on improving LLMs' in-depth understanding of complex context, specifically targeting:
 
-- Effective and efficient long-context modeling;
-- Unified understanding of multimodal context.
+I am Jiawei Gu, an MSc student in Computer Science at Sun Yat-sen University. 
+I am deeply motivated by the intellectual challenges of Natural Language Processing (NLP) and its intersections with multimodal learning and reasoning. I firmly believe that "pain is inevitable, suffering is optional," and I am ready to embrace the challenges that come with pursuing what I desire. Specifically, during this time, I have delved into research on natural language and multi-modal approaches, shaping me into an independent researcher with clear ideas about future research directions about the following topics:
+
+My research interests include:
+* [cite_start]Scaling of Text/Multimodal Reasoning [cite: 24]
+* [cite_start]Efficient Learning for Training and Inference [cite: 24]
+* [cite_start]Domain Knowledge Injection [cite: 24]
+
 
 ---
 
@@ -29,64 +29,96 @@ My research is driven by the passion for advancing the edge intelligence of larg
 ---
 
 ### Publications
+好的，我来帮你将这些 LaTeX 格式的出版物信息转换成你所期望的 Markdown/HTML 混合格式，使其看起来像你提供的“Guanzheng Chen”示例。
 
-- [RAPID: Long-Context Inference with Retrieval-Augmented Speculative Decoding](https://arxiv.org/abs/2502.20330)<br>
-  **Guanzheng Chen**\*, Qilong Feng\*, Jinjie Ni, Xin Li, Michael Qizhe Shieh.<br>
-   The Forty-Second International Conference on Machine Learning ([ICML'25](https://icml.cc/), ***Spotlight***)
+我将主要做以下转换：
 
-  <div class="btn-links">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2502.20330" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/John-AI-Lab/RAPID" target="_blank" rel="noopener">Code</a>
-  </div>
+  * 去除 LaTeX 命令，转换为 Markdown 和 HTML。
+  * 将标题、作者、会议信息格式化。
+  * 将链接转换为带有 `btn-links` 类的 HTML 按钮组。
+  * **不包含**每篇文章的“Contribution”详细描述，因为这在目标示例格式中没有体现。
+  * 处理作者名加粗和 `*` 标记。
+  * 确保内部文件路径使用 `relative_url`。
 
-- [LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization](https://arxiv.org/abs/2502.13922)<br>
-  **Guanzheng Chen**, Xin Li, Michael Qizhe Shieh, Lidong Bing.<br>
- The Thirteenth International Conference on Learning Representations ([ICLR'25](https://iclr.cc/))
-  
-  <div class="btn-links">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.arxiv.org/pdf/2502.13922" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/DAMO-NLP-SG/LongPO" target="_blank" rel="noopener">Code</a>
-  </div>
+-----
+
+### Publications
+
+  - [CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models](https://aclanthology.org/2024.emnlp-main.903/)\<br\>
+    **Jiawei Gu**, Zacc Yang, Chuanghao Ding, Rui Zhao, Fei Tan.\<br\>
+    EMNLP2024, First Author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://aclanthology.org/2024.emnlp-main.903/" target="\_blank" rel="noopener"\>Paper\</a\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1XkOUCJcO5Uq2TYD3fE3mKEBGN\_qcosYm/view?usp=sharing" target="\_blank" rel="noopener"\>Oral Presentation\</a\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://docs.google.com/presentation/d/1O1PSqvXQAtykU5w2hUVnANbk1UdwkahSPOCiomXBEc0/edit?usp=sharing" target="\_blank" rel="noopener"\>Slides\</a\>
+    \</div\>
+
+  - [Can MLLMs Reason in Multimodality? EMMA: An Enhanced MultiModal ReAsoning Benchmark](https://www.arxiv.org/abs/2501.05444)\<br\>
+    Yunzhuo Hao\*,\*\*Jiawei Gu\*\*\*, Huichen Will Wang\*, Linjie Li\*, Zhengyuan Yang, Lijuan Wang, Yu Cheng.\<br\>
+    ICML2025 (Oral), First author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.arxiv.org/abs/2501.05444" target="\_blank" rel="noopener"\>Paper\</a\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://emma-benchmark.github.io/" target="\_blank" rel="noopener"\>Homepage\</a\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://icml.cc/media/icml-2025/Slides/43702\_JWS4hmd.pdf" target="\_blank" rel="noopener"\>Slides\</a\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://event.baai.ac.cn/live/928" target="\_blank" rel="noopener"\>Talk\</a\>
+    \</div\>
+
+  - [Boosting Decision-Making Ability of LLMs with Speculative Reward Model Cost-Effectively](https://arxiv.org/abs/2506.00396)\<br\>
+    **Jiawei Gu**, Shangsong Liang.\<br\>
+    ACL2025 (Oral), First Author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="[https://arxiv.org/abs/2506.00396](https://arxiv.org/abs/2506.00396)" target="\_blank" rel="noopener"\>Paper\</a\>
+    \</div\>
+
+  - [Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience](https://arxiv.org/abs/2506.00842)\<br\>
+    **Jiawei Gu**, Ziting Xian, Yuanzhen Xie, Ye Liu, Enjie Liu, Ruichao Zhong, Mochi Gao, Yunzhi Tan, Bo Hu, Zang Li.\<br\>
+    ACL2025, First Author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="[https://arxiv.org/abs/2506.00842](https://arxiv.org/abs/2506.00842)" target="\_blank" rel="noopener"\>Paper\</a\>
+    \</div\>
+
+  - [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594)\<br\>
+    **Jiawei Gu**, Xuhui Jiang, Zhichao Shi, Hexiang Tan, Xuehao Zhai, Chengjin Xu, Wei Li, Yinghan Shen, Shengjie Ma, Honghao Liu, Saizhuo Wang, Kun Zhang, Yuanzhuo Wang, Wen Gao, Lionel Ni, Jian Guo.\<br\>
+    Preprint, First author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2411.15594" target="\_blank" rel="noopener"\>Paper\</a\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://awesome-llm-as-a-judge.github.io/" target="\_blank" rel="noopener"\>Homepage\</a\>
+    \</div\>
+
+  - [MolRAG: Unlocking the Power of Large Language Models for Molecular Property Prediction]\<br\>
+    Ziting Xian, **Jiawei Gu**, Lingbo Li, Shangsong Liang.\<br\>
+    ACL2025, Second Author
+
+  - [Scaling Reasoning, Losing Control: Evaluating Instruction Following in Large Reasoning Models](https://arxiv.org/abs/2505.14810)\<br\>
+    Tingchen Fu, **Jiawei Gu**, Yafu Li, Xiaoye Qu, Yu Cheng.\<br\>
+    Preprint, Second Author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="[https://arxiv.org/abs/2505.14810](https://arxiv.org/abs/2505.14810)" target="\_blank" rel="noopener"\>Paper\</a\>
+    \</div\>
+
+  - [Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual Simulations](https://arxiv.org/abs/2506.04633)\<br\>
+    Linjie Li, Mahtab Bigverdi, **Jiawei Gu**, Zixian Ma, Yinuo Yang, Ziang Li, Yejin Choi, Ranjay Krishna.\<br\>
+    Preprint, Third Author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="[https://arxiv.org/abs/2506.04633](https://arxiv.org/abs/2506.04633)" target="\_blank" rel="noopener"\>Paper\</a\>
+    \</div\>
+
+  - [FullFront: Benchmarking MLLMs Across the Full Front-End Engineering Workflow](https://arxiv.org/abs/2505.17399)\<br\>
+    Haoyu Sun, Huichen Will Wang, **Jiawei Gu**, Linjie Li, Yu Cheng.\<br\>
+    Preprint, Third Author
+
+    \<div class="btn-links"\>
+    \<a class="btn btn-outline-primary btn-page-header btn-sm" href="[https://arxiv.org/abs/2505.17399](https://arxiv.org/abs/2505.17399)" target="\_blank" rel="noopener"\>Paper\</a\>
+    \</div\>
 
 
-- [VCD: Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](https://arxiv.org/abs/2311.16922)<br>
- Sicong Leng, Hang Zhang, **Guanzheng Chen**, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing.<br>
- The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024 ([CVPR'24](https://cvpr.thecvf.com/Conferences/2024))
-  
-  <div class="btn-links">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2311.16922" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/DAMO-NLP-SG/VCD" target="_blank" rel="noopener">Code</a>
-  </div>
-
-
-
-- [CLEX: Continuous Length Extrapolation for Large Language Models](https://arxiv.org/pdf/2310.16450.pdf)<br>
-  **Guanzheng Chen**, Xin Li, Zaiqiao Meng, Shangsong Liang, Lidong Bing.<br>
- The Twelfth International Conference on Learning Representations ([ICLR'24](https://iclr.cc/))
-  
-  <div class="btn-links">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2310.16450.pdf" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/DAMO-NLP-SG/CLEX" target="_blank" rel="noopener">Code</a>
-  </div>
-
-
-- [Revisiting Parameter-Efficient Tuning: Are We Really There Yet?](https://arxiv.org/abs/2202.07962)<br>
-  **Guanzheng Chen**, Fangyu Liu, Zaiqiao Meng, Shangsong Liang.<br>
-  The 2022 Conference on Empirical Methods in Natural Language Processing ([EMNLP'22](https://2022.emnlp.org/), ***Oral Presentation***).
-  
-  <div class="btn-links">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2202.07962.pdf" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/guanzhchen/petuning" target="_blank" rel="noopener">Code</a>
-  </div>
-
-- [Multi-Relational Graph Representation Learning with Bayesian Gaussian Process Network](https://ojs.aaai.org/index.php/AAAI/article/view/20492)<br>
-  **Guanzheng Chen**, Jinyuan Fang, Zaiqiao Meng, Qiang Zhang, Shangsong Liang.<br>
-  Thirty-Sixth AAAI Conferene on Artificial Intelligence ([AAAI'22](https://aaai.org/Conferences/AAAI-22/)).<br>
-  
-  <div class="btn-links">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ '/data/papers/8491.ChenG_with_appendix.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/sysu-gzchen/GGPN" target="_blank" rel="noopener">Code</a>
-  </div>
 
 ---
 
