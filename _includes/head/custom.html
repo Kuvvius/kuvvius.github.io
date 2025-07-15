@@ -1,50 +1,276 @@
-<!-- start custom head snippets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css">
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
 
-<!-- end custom head snippets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous" />
 <style>
-    /* 调整主内容区域的边距以匹配朋友的网站 */
-    .article-wrap {
-      margin-top: 100px;
-      /* 注意：-300px 的 margin-right 可能会导致在小屏幕上出现水平滚动条，请谨慎使用 */
-      /* 建议先尝试一个较小的负值，或者只调整 margin-top */
-      margin-right: -100px; /* 尝试一个较小的负值，例如 -100px */
+    /* WARNING: These styles are very broad and will override many Minimal Mistakes default styles.
+       You may need to add !important to specific rules or make selectors more specific if conflicts arise. */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-  
-    /* 调整侧边栏（如果仍有残留样式） */
-    .sidebar {
-        margin-top: 90px; /* 匹配朋友网站的 article-author-top 的 margin-top */
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fafafa;
     }
-  
-    /* 自定义图标大小，如果你觉得 font size="6px" 不够灵活 */
-    .article-author-top .ai,
-    .article-author-top .fab,
-    .article-author-top .fas {
-        font-size: 2.5rem; /* 例如，调整图标大小 */
-        margin: 0 5px; /* 调整图标间距 */
+    
+    .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-  
-    /* 朋友网站的顶部导航栏有特殊的样式 */
-    /* Minimal Mistakes 默认导航栏样式与朋友的旧主题不同，以下是尝试模拟 */
-    .masthead__menu {
+    
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .nav {
         display: flex;
-        justify-content: center; /* 导航居中 */
-        padding: 1rem 0; /* 调整上下间距 */
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
     }
-    .masthead__menu .site-title {
-        font-size: 2rem; /* 调整标题大小 */
+    
+    .site-title {
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.3s;
+    }
+    
+    .nav-links a:hover {
+        opacity: 0.8;
+    }
+    
+    .hero-section {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .profile-image {
+        width: 180px;
+        height: 240px;
+        border-radius: 15px;
+        object-fit: cover;
+        border: 4px solid rgba(255,255,255,0.2);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    
+    .hero-content {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+        opacity: 0.9;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .social-links a {
+        color: white;
+        font-size: 24px;
+        transition: transform 0.3s;
+    }
+    
+    .social-links a:hover {
+        transform: translateY(-3px);
+    }
+    
+    .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .content-section {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        border: 1px solid #e9ecef;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 10px;
+    }
+    
+    .about-content {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #555;
+    }
+    
+    .interests-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .interests-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 16px;
+    }
+    
+    .interests-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .interests-list li::before {
+        content: "▸";
+        color: #667eea;
+        margin-right: 10px;
         font-weight: bold;
     }
-    .masthead__menu-item a {
-        font-size: 1.1rem; /* 调整导航链接文字大小 */
-        font-weight: normal;
-        padding: 0.5rem 1rem; /* 调整导航链接内边距 */
+    
+    .education-item, .experience-item {
+        margin-bottom: 25px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #667eea;
     }
-    /* 朋友网站的导航栏下有一条细线，Minimal Mistakes 默认没有，可以尝试添加 */
-    .masthead {
-        border-bottom: 1px solid #e0e0e0; /* 添加底部细线 */
+    
+    .education-item h3, .experience-item h3 {
+        color: #2c3e50;
+        margin-bottom: 5px;
     }
-  
-  </style>
+    
+    .education-item p, .experience-item p {
+        color: #666;
+        margin-bottom: 3px;
+    }
+    
+    .news-item {
+        padding: 15px;
+        margin-bottom: 15px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #28a745;
+    }
+    
+    .news-date {
+        font-weight: 700;
+        color: #28a745;
+    }
+    
+    .publication-item {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #dc3545;
+    }
+    
+    .publication-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+    
+    .publication-authors {
+        color: #666;
+        margin-bottom: 5px;
+    }
+    
+    .publication-venue {
+        color: #dc3545;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    .publication-links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .publication-links a {
+        background: #667eea;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 12px;
+        transition: background 0.3s;
+    }
+    
+    .publication-links a:hover {
+        background: #5a67d8;
+    }
+    
+    .footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 40px;
+    }
+    
+    @media (max-width: 768px) {
+        .hero-section {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 28px;
+        }
+        
+        .nav-links {
+            display: none; /* In Jekyll, you might want to use a responsive nav menu instead */
+        }
+        
+        .main-content {
+            padding: 20px 15px;
+        }
+        
+        .content-section {
+            padding: 20px;
+        }
+    }
+</style>

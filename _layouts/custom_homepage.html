@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }} - Homepage</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% include head.html %}
+
+    {% include head/custom.html %}
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <nav class="nav">
+                <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="{{ '/data/Resume_JiaweiGu.pdf' | relative_url }}" target="_blank">CV</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero-section">
+                <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.name }}" class="profile-image">
+                <div class="hero-content">
+                    <h1 class="hero-title">{{ site.name }}</h1>
+                    <p class="hero-subtitle">{{ site.description }}</p>
+                    <p style="opacity: 0.9; margin-bottom: 20px;">Sun Yat-sen University • Expected Graduation: June 2025</p>
+                    
+                    <div class="social-links">
+                        <a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="{{ site.author.links | where: "label", "Google Scholar" | first | map: "url" | first }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                        <a href="{{ site.author.links | where: "label", "GitHub" | first | map: "url" | first }}" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="{{ site.author.links | where: "label", "X" | first | map: "url" | first }}" title="X"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        {{ content }} {# This is where the content from index.md will be injected #}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; {{ site.copyright }}</p>
+    </footer>
+</body>
+</html>
