@@ -20,9 +20,9 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
 ### News
 
 * **July 2025:** [EMMA](https://www.arxiv.org/abs/2501.05444) has been accepted as an **Oral presentation at ICML 2025**!
-* **July 2025:** [SRM](https://arxiv.org/abs/2506.00396) has been accepted as **Oral presentations at ACL 2025**! Additionally, [CoRE](https://arxiv.org/abs/2506.00842) and MolRAG are also accepted by ACL 2025.
+* **July 2025:** [SRM](https://arxiv.org/abs/2506.00396) has been accepted as **Oral presentations at ACL 2025**! Additionally, [CoRE](https://arxiv.org/abs/2506.00842) is also accepted by ACL 2025.
 * **November 2024:** We released the preprint of [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594), which provides a comprehensive overview of using LLMs for evaluation.
-* **November 2024:** The CMR Scaling Law has been accepted by **EMNLP 2024**.
+* **November 2024:** [CMR Scaling Law](https://aclanthology.org/2024.emnlp-main.903/) has been accepted by **EMNLP 2024**.
 
 ---
 
