@@ -13,7 +13,7 @@ locale                   : "en-US"
 title                    : "Jiawei Gu (顾嘉炜)" 
 title_separator          : "-"
 name                     : "Jiawei Gu" 
-description              : "MSc Student in Computer Science | Natural Language Processing & Multimodal AI"
+description              : "MSc Student"
 url                      : "https://kuvvius.github.io/"
 baseurl                  : # 保持空，GitHub Pages 不需要 baseurl
 repository               : "Kuvvius/kuvvius.github.io"
@@ -24,7 +24,7 @@ breadcrumbs              : # 保持空
 words_per_minute         : 200
 enable_copy_code_button  : # 保持空
 copyright                : "© 2025 Jiawei Gu."
-copyright_url            : "https://kuvvius.github.io/" # ⭐ 已修改：版权链接指向网站主页
+copyright_url            : "https://kuvvius.github.io/" # 
 
 
 comments:
@@ -32,7 +32,7 @@ comments:
 
 # Social Sharing (用于社交媒体分享时的预览)
 twitter:
-  username               : "@YOUR_TWITTER_USERNAME" # ⭐ 替换：你的 Twitter 用户名 (如果有)。如果没有，可以删除这行。
+  username               : "@kuvvius" # ⭐ 替换：你的 Twitter 用户名 (如果有)。如果没有，可以删除这行。
 facebook:
   username               : # 保持空
   app_id                 : # 保持空
@@ -56,7 +56,7 @@ analytics:
 author:
   name             : "Jiawei Gu"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "MSc student in Computer Science at Sun Yat-sen University."
+  bio              : "MSc student <br>Sun Yat-sen University."
   location         : "Guangzhou, China"
   email            : "Kuvvius@gmail.com"
   links: # 侧边栏的社交媒体链接和图标
@@ -138,6 +138,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 
 # Outputting
 permalink: /:categories/:title/

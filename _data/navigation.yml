@@ -1,12 +1,21 @@
 # main links
+# main:
+#   - title: "Quick-Start Guide"
+#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#   # - title: "About"
+#   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+#   # - title: "Sample Posts"
+#   #   url: /year-archive/
+#   # - title: "Sample Collections"
+#   #   url: /collection-archive/
+#   # - title: "Sitemap"
+#   #   url: /sitemap/
+
+  # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "About Me"
+    url: /
+  - title: "Publications"
+    url: /#publications # 假设你的Publications部分有一个id="publications"
+  - title: "CV"
+    url: /assets/JiaweiGu_ICML.pdf # 假设你的简历文件在这里，请替换为你的实际文件名
