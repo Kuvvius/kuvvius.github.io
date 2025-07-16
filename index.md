@@ -20,9 +20,9 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
 ### News
 
 * **July 2025:** [EMMA](https://www.arxiv.org/abs/2501.05444) has been accepted as an **Oral presentation at ICML 2025**!
-* **July 2025:** [SRM](https://arxiv.org/abs/2506.00396) has been accepted as **Oral presentations at ACL 2025**! Additionally, CoRE and MolRAG are also accepted by ACL 2025.
-* **November 2024:** We released the preprint of "A Survey on LLM-as-a-Judge," which provides a comprehensive overview of using LLMs for evaluation.
-* **November 2024:** My paper "CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models" was presented at **EMNLP 2024**.
+* **July 2025:** [SRM](https://arxiv.org/abs/2506.00396) has been accepted as **Oral presentations at ACL 2025**! Additionally, [CoRE](https://arxiv.org/abs/2506.00842) and MolRAG are also accepted by ACL 2025.
+* **November 2024:** We released the preprint of [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594), which provides a comprehensive overview of using LLMs for evaluation.
+* **November 2024:** The CMR Scaling Law has been accepted by **EMNLP 2024**.
 
 ---
 
@@ -34,7 +34,6 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
 
   <div class="publication-buttons">
   <a class="btn btn-outline-primary btn-sm" href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank" rel="noopener">PDF</a>
-  <a class="btn btn-outline-primary btn-sm" href="YOUR_CODE_LINK" target="_blank" rel="noopener">Code</a>
   </div>
 
 - **[Can MLLMs Reason in Multimodality? EMMA: An Enhanced MultiModal ReAsoning Benchmark](https://www.arxiv.org/abs/2501.05444)**<br>
@@ -42,7 +41,7 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
   ICML2025 (Oral)
 
   <div class="publication-buttons">
-  <a class="btn btn-outline-primary btn-sm" href="https://www.arxiv.org/abs/2501.05444" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-primary btn-sm" href="https://www.arxiv.org/pdf/2501.05444" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-primary btn-sm" href="https://emma-benchmark.github.io/" target="_blank" rel="noopener">Homepage</a>
   <a class="btn btn-outline-primary btn-sm" href="https://github.com/EMMA-Bench/EMMA" target="_blank" rel="noopener">Code</a>
   </div>
@@ -61,7 +60,7 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
   ACL2025 Findings
 
   <div class="publication-buttons">
-  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2506.00842" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2506.00842" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-primary btn-sm" href="https://github.com/Kuvvius/CoRE" target="_blank" rel="noopener">Code</a>
   </div>
 
@@ -70,7 +69,7 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
   Preprint
 
   <div class="publication-buttons">
-  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2411.15594" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2411.15594" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-primary btn-sm" href="https://awesome-llm-as-a-judge.github.io/" target="_blank" rel="noopener">Homepage</a>
   <a class="btn btn-outline-primary btn-sm" href="https://github.com/DataArcTech/LLM-as-a-Judge" target="_blank" rel="noopener">Code</a>
   </div>
@@ -88,7 +87,7 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
   Preprint
 
   <div class="publication-buttons">
-  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2505.14810" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2505.14810" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-primary btn-sm" href="https://github.com/TingchenFu/MathIF" target="_blank" rel="noopener">Code</a>
   </div>
 
@@ -97,7 +96,7 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
   Preprint
 
   <div class="publication-buttons">
-  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2506.04633" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2506.04633" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-primary btn-sm" href="https://github.com/STARE-bench/STARE" target="_blank" rel="noopener">Code</a>
   </div>
 
@@ -106,7 +105,7 @@ I am deeply motivated by the intellectual challenges of Natural Language Process
   Preprint
 
   <div class="publication-buttons">
-  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2505.17399" target="_blank" rel="noopener">PDF</a>
+  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2505.17399" target="_blank" rel="noopener">PDF</a>
   <a class="btn btn-outline-primary btn-sm" href="https://github.com/Mikivishy/FullFront" target="_blank" rel="noopener">Code</a>
   </div>
 
