@@ -174,17 +174,192 @@
     /* About Section */
     .about-content {
       color: #495057;
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
     }
 
+    .about-content p {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-content p::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 0;
+      height: 0;
+      border-left: 10px solid #667eea;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
+
+    .about-content p:first-child::before {
+      display: none;
+    }
+
+    .about-content p:last-child {
+      margin-bottom: 0rem;
+    }
+
+    .about-content a {
+      color: #8b9dc3;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .about-content a:hover {
+      color: #667eea;
+      text-decoration: underline;
+    }
+
+    .beyond-research {
+      max-width: 1400px;
+      margin: 0rem auto 0;
+    }
+
+    .beyond-research-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 1rem;
+      gap: 1rem;
+    }
+
+    .beyond-research-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin: 0;
+      line-height: 1.4;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .beyond-research-title-main {
+      display: inline;
+    }
+
+    .beyond-research-title-sub {
+      display: inline;
+      font-size: 0.9rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #64748b;
+    }
+
+    .beyond-research-toggle {
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 12px solid #667eea;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 0.3rem;
+      transform: rotate(0deg);
+    }
+
+    .beyond-research-toggle.expanded {
+      transform: rotate(90deg);
+    }
+
+    .beyond-research-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .beyond-research-list.expanded {
+      max-height: 600px;
+    }
+
+    .beyond-research-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .beyond-research-item.placeholder {
+      opacity: 0.6;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+
+    .beyond-research-item.placeholder .beyond-research-label {
+      opacity: 0.8;
+    }
+
+    .beyond-research-item.placeholder .beyond-research-text {
+      opacity: 0.7;
+    }
+
+    .beyond-research-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border: none;
+    }
+
+    .beyond-research-image.placeholder {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 50%, rgba(240, 147, 251, 0.3) 100%);
+      filter: blur(1px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .beyond-research-image.placeholder::before {
+      content: '🔓';
+      position: absolute;
+      font-size: 3rem;
+      opacity: 0.5;
+    }
+
+    .beyond-research-icon {
+      display: none;
+    }
+
+    .beyond-research-text {
+      padding: 0.9rem 1rem;
+      color: #495057;
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+
+    .beyond-research-label {
+      display: block;
+      font-weight: 600;
+      color: #667eea;
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+    }
+
     /* Experience Gallery */
     .experience-gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
       max-width: 1400px;
       margin: 0 auto;
@@ -215,6 +390,10 @@
       margin-bottom: 0.75rem;
     }
 
+    .experience-title.smaller {
+      font-size: 1.1rem;
+    }
+
     .experience-description {
       color: #64748b;
       line-height: 1.6;
@@ -239,7 +418,7 @@
     }
 
     .news-item {
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       border-bottom: 1px solid #e2e8f0;
       display: flex;
       align-items: flex-start;
@@ -271,12 +450,44 @@
       font-weight: 500;
     }
 
+    .news-highlight {
+      color: #dc2626;
+      font-weight: 600;
+    }
+
+    .news-award {
+      color: #dc2626 !important;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .news-content a.news-award:hover {
+      text-decoration: underline;
+    }
+
+    .news-attention {
+      color: #dc2626;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .award-icon {
+      display: inline-block;
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+    }
+
     .news-content a:hover {
       text-decoration: underline;
     }
 
     .news-content strong {
       color: #1e293b;
+      font-weight: 600;
+    }
+
+    .news-content a strong {
+      color: #667eea;
       font-weight: 600;
     }
 
@@ -295,9 +506,9 @@
 
     .award-item {
       display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1rem 0;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 0.5rem 0;
       border-bottom: 1px solid #e2e8f0;
       color: #1e293b;
       font-size: 1rem;
@@ -308,9 +519,27 @@
       border-bottom: none;
     }
 
-    .award-icon {
+    .award-date {
+      font-weight: 600;
+      color: #64748b;
+      font-size: 0.95rem;
       flex-shrink: 0;
-      font-size: 1.2rem;
+      min-width: 80px;
+    }
+
+    .award-content {
+      flex: 1;
+    }
+
+    .award-highlight {
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .award-percentage {
+      color: #667eea;
+      font-weight: 600;
+      margin-right: 0.5rem;
     }
 
     /* Featured Publications - Carousel */
@@ -361,6 +590,14 @@
 
     .pub-image.top-align {
       object-position: top;
+    }
+
+    .pub-image.srm-align {
+      object-position: center 30%;
+    }
+
+    .pub-image.stare-align {
+      object-position: center 25%;
     }
 
     .pub-badge {
@@ -450,12 +687,12 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.65rem 1.25rem;
+      padding: 0.5rem 1rem;
       background: #667eea;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       font-weight: 500;
       transition: all 0.2s;
     }
@@ -481,29 +718,24 @@
     .pubs-list {
       list-style: none;
       display: grid;
-      gap: 2.5rem;
+      gap: 1rem;
     }
 
     .pub-item {
       display: grid;
       grid-template-columns: 450px 1fr;
-      gap: 2.5rem;
+      gap: 1.5rem;
       align-items: start;
       background: #f8fafc;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-      transition: all 0.3s;
-    }
-
-    .pub-item:hover {
-      background: white;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
     }
 
     .pub-thumb {
       width: 450px;
-      height: 300px;
+      height: 200px;
       border-radius: 8px;
       object-fit: cover;
       background: white;
@@ -683,6 +915,8 @@
       -webkit-font-smoothing: antialiased;
       scroll-snap-align: center;
       scroll-snap-stop: always;
+      text-decoration: none;
+      color: inherit;
     }
 
     .talk-card:hover {
@@ -794,6 +1028,14 @@
         font-size: 2.8rem;
       }
 
+      .beyond-research-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .beyond-research-list.expanded {
+        max-height: 800px;
+      }
+
       .experience-gallery {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -805,7 +1047,7 @@
 
       .pub-thumb {
         width: 400px;
-        height: 267px;
+        height: 180px;
       }
     }
 
@@ -817,6 +1059,22 @@
       .navbar-content {
         flex-direction: column;
         gap: 1rem;
+      }
+
+      .beyond-research-title {
+        flex-wrap: wrap;
+      }
+
+      .beyond-research-title-sub {
+        font-size: 0.85rem;
+      }
+
+      .beyond-research-list {
+        grid-template-columns: 1fr;
+      }
+
+      .beyond-research-list.expanded {
+        max-height: 1200px;
       }
 
       .experience-gallery {
@@ -966,7 +1224,7 @@
   <div class="hero-content">
     <img src="./assets/images/avatar.jpg" alt="Jiawei Gu" class="profile-photo-hero">
     <h1 class="hero-title">Jiawei Gu</h1>
-    <p class="hero-motto">"Thinking in modalities, reasoning universally"</p>
+    <p class="hero-motto">"Think beyond boundaries, explore unified intelligence."</p>
     
     <div class="hero-links">
       <a href="mailto:Kuvvius@gmail.com" class="hero-link">
@@ -992,43 +1250,57 @@
     <h2 class="section-title">About Me</h2>
     <div class="about-content">
       <p>
-        I am deeply motivated by the intellectual challenges of Natural Language Processing (NLP) and its intersections with multimodal learning and reasoning. I firmly believe that "pain is inevitable, suffering is optional," and I am ready to embrace the challenges that come with pursuing what I desire.
+        I am a gap year student applying for Fall 2026 PhD programs after completing my Master's at Sun Yat-sen University. Currently, I am a research intern at NUS supervised by <a href="https://michaelshieh.com/" target="_blank">Prof. Michael Qizhe Shieh</a> and <a href="https://ych133.github.io/" target="_blank">Prof. Yu Cheng</a>.
       </p>
-    </div>
+      
+      <p>
+        <u>My research journey began with advancing <strong>efficient and reliable reasoning</strong> in language models.</u> Through <a href="#pub-cmr">CMR Scaling Law</a>, <a href="#pub-srm">SRM</a>, and <a href="#pub-core">CoRE</a>, I developed methods to inject domain knowledge and optimize reasoning efficiency across training and inference stages. These explorations established foundations for <em>language-centric reasoning</em>. However, they also revealed a fundamental limitation: <strong>language alone cannot capture the full spectrum of reasoning.</strong> Real-world problems often require spatial and visual understanding that words struggle to encode (<a href="#pub-emma">EMMA</a>, <a href="#pub-stare">STARE</a> benchmark).
+      </p>
+      
+      <p>
+        <u>This shifted my focus toward <strong>unified multimodal intelligence</strong></u>, enabling models to <strong style="color: #667eea;">think <em>in</em> modalities, not just <em>with</em> them</strong>. Through <a href="#pub-adareasoner">AdaReasoner</a> and <a href="#pub-thinkmorph">ThinkMorph</a>, I explore how modalities function as complementary tools: language for logic, vision for spatial operations. My goal is to build systems that <strong>think beyond boundaries</strong>, seamlessly integrating diverse modalities to form <strong>genuine multimodal reasoning</strong> that is both efficient and reliable.
+      </p>
+      
+      <p>
+        Beyond research, I embrace diverse experiences and challenges. <em>(Click below to explore more)</em>
+      </p>
 
-    <!-- Experience Gallery -->
-    <div class="experience-gallery">
-      <!-- Student Union President -->
-      <div class="experience-card">
-        <img src="assets/experience-student-union.jpg" alt="Student Union President" class="experience-image">
-        <div class="experience-content">
-          <h3 class="experience-title">Student Union President</h3>
-          <p class="experience-description">
-            Led the student union at Sun Yat-sen University, organizing campus-wide events and representing student voices in academic affairs.
-          </p>
+      <!-- Beyond Research -->
+      <div class="beyond-research">
+        <div class="beyond-research-header" onclick="toggleBeyondResearch()">
+          <h3 class="beyond-research-title">
+            <span class="beyond-research-title-main">Beyond Research</span>
+            <span class="beyond-research-title-sub">Many Roles, One Journey</span>
+          </h3>
+          <span class="beyond-research-toggle" id="beyond-research-toggle"></span>
         </div>
-      </div>
-
-      <!-- Teaching Experience -->
-      <div class="experience-card">
-        <img src="assets/experience-teaching.jpg" alt="Math Teacher" class="experience-image">
-        <div class="experience-content">
-          <h3 class="experience-title">Volunteer Math Teacher</h3>
-          <p class="experience-description">
-            Volunteered as a math teacher in rural areas, dedicating time to inspire young students and foster their love for learning.
-          </p>
-        </div>
-      </div>
-
-      <!-- Skydiving Adventure -->
-      <div class="experience-card">
-        <img src="assets/experience-skydiving.jpg" alt="Skydiving" class="experience-image">
-        <div class="experience-content">
-          <h3 class="experience-title">Skydiving Adventure</h3>
-          <p class="experience-description">
-            Embraced the thrill of skydiving, experiencing the exhilaration of free fall and the beauty of soaring through the sky.
-          </p>
-        </div>
+        <ul class="beyond-research-list" id="beyond-research-list">
+          <li class="beyond-research-item">
+            <img src="assets/experience-student-union.jpg" alt="Student Union President" class="beyond-research-image">
+            <div class="beyond-research-text">
+              <span class="beyond-research-label">Student Union President</span>
+              Led the student union at Sun Yat-sen University, developing leadership and presentation skills.            </div>
+          </li>
+          <li class="beyond-research-item">
+            <img src="assets/experience-teaching.jpg" alt="Rural Volunteer Teacher" class="beyond-research-image">
+            <div class="beyond-research-text">
+              <span class="beyond-research-label">Rural Volunteer Teacher</span>
+              Volunteered as a high school math teacher in Tibet, inspiring students and fostering their love for learning.          </div>
+          </li>
+          <li class="beyond-research-item">
+            <img src="assets/experience-skydiving.jpg" alt="Adventure Enthusiast" class="beyond-research-image">
+            <div class="beyond-research-text">
+              <span class="beyond-research-label">Adventure Enthusiast</span>
+              Passionate about challenges, from skydiving to bungee jumping, constantly pushing personal boundaries.            </div>
+          </li>
+          <li class="beyond-research-item placeholder">
+            <div class="beyond-research-image placeholder"></div>
+            <div class="beyond-research-text">
+              <span class="beyond-research-label">More Roles Unlocking...</span>
+              Continuously exploring new experiences and challenges.
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -1038,27 +1310,33 @@
     <h2 class="section-title">News</h2>
     <ul class="news-list">
       <li class="news-item">
-        <div class="news-date">July 2025</div>
+        <div class="news-date">Nov 2025</div>
         <div class="news-content">
-          <a href="https://www.arxiv.org/abs/2501.05444" target="_blank">EMMA</a> has been accepted as an <strong>Oral presentation at ICML 2025</strong>! (Top 0.9%)
+          The preprint of <a href="https://arxiv.org/abs/2510.27492" target="_blank"><strong>ThinkMorph</strong></a> was released. <a href="https://x.com/Kuvvius/status/1985388865595851135" target="_blank" style="color: #667eea; text-decoration: none;">[Twitter]</a> (<span class="news-attention">50K+ </span> community engagement)
         </div>
       </li>
       <li class="news-item">
         <div class="news-date">July 2025</div>
         <div class="news-content">
-          <a href="https://arxiv.org/abs/2506.00396" target="_blank">SRM</a> has been accepted as <strong>Oral presentations at ACL 2025</strong>!
+          <a href="https://arxiv.org/abs/2506.00396" target="_blank">SRM</a> has received the <a href="https://2025.aclweb.org/program/awards/" target="_blank" class="news-award"><span class="award-icon">🏆</span>Best Paper Honourable Mention Award</a> at ACL 2025!
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">July 2025</div>
+        <div class="news-content">
+          <a href="https://www.arxiv.org/abs/2501.05444" target="_blank">EMMA</a> has been accepted as an <span class="news-highlight">Oral presentation (Top 1%)</span> at ICML 2025!
+        </div>
+      </li>
+      <li class="news-item">
+        <div class="news-date">March 2025</div>
+        <div class="news-content">
+          <a href="https://arxiv.org/abs/2506.00396" target="_blank">SRM</a> has been accepted as <span class="news-highlight">Oral presentation (Top 3%)</span> at ACL 2025! 
         </div>
       </li>
       <li class="news-item">
         <div class="news-date">Nov 2024</div>
         <div class="news-content">
-          We released the preprint of <a href="https://arxiv.org/abs/2411.15594" target="_blank">A Survey on LLM-as-a-Judge</a>.
-        </div>
-      </li>
-      <li class="news-item">
-        <div class="news-date">Nov 2024</div>
-        <div class="news-content">
-          <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank">CMR Scaling Law</a> has been accepted by <strong>EMNLP 2024</strong>.
+          The preprint of <a href="https://arxiv.org/abs/2411.15594" target="_blank">A Survey on LLM-as-a-Judge</a> was released. <a href="https://x.com/omarsar0/status/1861411159913472229" target="_blank" style="color: #667eea; text-decoration: none;">[Twitter]</a> (<span class="news-attention">50K+</span> community engagement)
         </div>
       </li>
     </ul>
@@ -1074,7 +1352,7 @@
       <li class="featured-pub">
         <div class="pub-image-wrapper">
           <img src="assets/thinkmorph.jpg" alt="ThinkMorph" class="pub-image top-align">
-          <span class="pub-badge spotlight">ICLR 2025 Spotlight</span>
+          <span class="pub-badge spotlight"> 🔥 Newest</span>
         </div>
         <div class="pub-content">
           <div class="pub-title">
@@ -1135,8 +1413,8 @@
       <!-- SRM -->
       <li class="featured-pub">
         <div class="pub-image-wrapper">
-          <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Speculative+Reward+Model" alt="SRM" class="pub-image">
-          <span class="pub-badge oral">ACL 2025 Oral + Best Paper Honorable Mention </span>
+          <img src="assets/srm_award.jpg" alt="SRM" class="pub-image srm-align">
+          <span class="pub-badge oral">ACL 2025 Oral + 🏆 Best Paper Honorable Mention </span>
         </div>
         <div class="pub-content">
           <div class="pub-title">
@@ -1163,12 +1441,12 @@
       <!-- CoRE -->
       <li class="featured-pub">
         <div class="pub-image-wrapper">
-          <img src="https://via.placeholder.com/800x400/764ba2/ffffff?text=CoRE" alt="CoRE" class="pub-image">
+          <img src="assets/stare.png" alt="STARE" class="pub-image stare-align">
           <span class="pub-badge oral">ACL 2025</span>
         </div>
         <div class="pub-content">
           <div class="pub-title">
-            <a href="https://arxiv.org/abs/2506.00842" target="_blank">Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience</a>
+            <a href="#" target="_blank">Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual Simulations</a>
           </div>
           <div class="pub-authors">
             <strong>Jiawei Gu</strong>, Ziting Xian, Yuanzhen Xie, Ye Liu, Enjie Liu, Ruichao Zhong, Mochi Gao, Yunzhi Tan, Bo Hu, Zang Li
@@ -1178,10 +1456,10 @@
             We propose CoRE, a contrastive retrieval-augmented generation framework that enhances structured knowledge reasoning through experience.
           </div>
           <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2506.00842" target="_blank" class="pub-link">
+            <a href="#" target="_blank" class="pub-link">
               <i class="fas fa-file-pdf"></i> PDF
             </a>
-            <a href="https://github.com/Kuvvius/CoRE" target="_blank" class="pub-link secondary">
+            <a href="#" target="_blank" class="pub-link secondary">
               <i class="fab fa-github"></i> Code
             </a>
           </div>
@@ -1196,16 +1474,46 @@
     
     <ul class="awards-list">
       <li class="award-item">
-        <span class="award-icon">🏅</span>
-        <span>ICML 2025 Oral Presentation (Top 0.9%)</span>
+        <div class="award-date">Aug 2025</div>
+        <div class="award-content">
+          <span class="award-highlight">Best Paper Honourable Mention Award</span>, ACL 2025
+        </div>
       </li>
       <li class="award-item">
-        <span class="award-icon">🏅</span>
-        <span>ACL 2025 Oral Presentation</span>
+        <div class="award-date">Sep 2024</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤1%)</span><span class="award-highlight">37 Interactive Entertainment College Student Empowerment Scholarship</span>
+        </div>
       </li>
       <li class="award-item">
-        <span class="award-icon">🏅</span>
-        <span>Outstanding Graduate Student, Sun Yat-sen University</span>
+        <div class="award-date">Sep 2023</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤1%)</span><span class="award-highlight">Shenzhen Stock Exchange Scholarship</span>
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Feb 2023</div>
+        <div class="award-content">
+          <span class="award-highlight">Five-star Volunteers</span> of Sun Yat-sen University
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Mar 2023</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤5%)</span><span class="award-highlight">Backbone of Excellent Postgraduate Association</span> of Sun Yat-sen University
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Jun 2022</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤10%)</span><span class="award-highlight">Outstanding Student Scholarship First Prize</span> of Sun Yat-sen University
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Jun 2021</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤5%)</span><span class="award-highlight">Excellent Inspirational Scholarship</span> of Sun Yat-sen University
+        </div>
       </li>
     </ul>
   </section>
@@ -1218,52 +1526,66 @@
       <button class="talks-nav-btn prev" id="talks-prev" aria-label="Previous talk">‹</button>
       <button class="talks-nav-btn next" id="talks-next" aria-label="Next talk">›</button>
       <div class="talks-grid" id="talks-grid">
-      <!-- EMMA Talk -->
-      <div class="talk-card">
-        <div class="talk-image-wrapper">
-          <img src="assets/emma.png" alt="EMMA Talk" class="talk-image top-align">
-        </div>
-        <div class="talk-content">
-          <div class="talk-venue">International Conference on Machine Learning (ICML), 2025</div>
-          <div class="talk-title">Can MLLMs Reason in Multimodality? EMMA: An Enhanced MultiModal ReAsoning Benchmark</div>
-          <div class="talk-description">
-            Oral presentation on evaluating multimodal reasoning capabilities of large language models through our EMMA benchmark.
-          </div>
-        </div>
-      </div>
-      
       <!-- SRM Talk -->
-      <div class="talk-card">
+      <a href="https://docs.google.com/presentation/d/1R079wHrpwQR06vRbW-SlCptUBgx5LqXO/edit?slide=id.p1#slide=id.p1" target="_blank" class="talk-card">
         <div class="talk-image-wrapper">
-          <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Speculative+Reward+Model" alt="SRM Talk" class="talk-image">
+          <img src="srm_talk.png" alt="SRM Talk" class="talk-image">
         </div>
         <div class="talk-content">
-          <!-- <div class="talk-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2025</div> -->
-          <div class="talk-title">Speculative Reward Model Boosts Decision Making Ability of LLMs Cost-Effectively</div>
+          <div class="talk-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2025</div>
+          <div class="talk-title">Speculative Reward Model: Accelerating LLM Inference with Cost-Effective Speculative Decoding</div>
           <div class="talk-description">
             Oral presentation on improving LLM decision-making efficiency through speculative reward modeling techniques.
           </div>
         </div>
-      </div>
-
-      <!-- ThinkMorph Talk -->
-      <div class="talk-card">
+      </a>
+      
+      <!-- EMMA BAAI Talk -->
+      <a href="https://event.baai.ac.cn/activities/928" target="_blank" class="talk-card">
         <div class="talk-image-wrapper">
-          <img src="assets/thinkmorph.jpg" alt="ThinkMorph Talk" class="talk-image top-align">
+          <img src="baai_emma.jpg" alt="EMMA BAAI Talk" class="talk-image">
         </div>
         <div class="talk-content">
-          <div class="talk-venue">International Conference on Learning Representations (ICLR), 2025</div>
-          <div class="talk-title">ThinkMorph: Emergent Intelligence Through Interleaved Multimodal Chain-of-Thought Reasoning</div>
+          <div class="talk-venue">Beijing Academy of Artificial Intelligence (BAAI), 2025</div>
+          <div class="talk-title">EMMA: An Enhanced MultiModal ReAsoning Benchmark</div>
           <div class="talk-description">
-            Spotlight presentation on achieving emergent intelligence through interleaved text-image reasoning in multimodal models.
+            Invited talk on evaluating multimodal reasoning capabilities of large language models through our EMMA benchmark.
           </div>
         </div>
-      </div>
+      </a>
+
+      <!-- LLM-as-a-Judge Survey Talk -->
+      <a href="https://event.baai.ac.cn/activities/878" target="_blank" class="talk-card">
+        <div class="talk-image-wrapper">
+          <img src="judge_talk.jpg" alt="LLM-as-a-Judge Survey Talk" class="talk-image">
+        </div>
+        <div class="talk-content">
+          <div class="talk-venue">Beijing Academy of Artificial Intelligence (BAAI), 2024</div>
+          <div class="talk-title">A Survey on LLM-as-a-Judge: Evaluation, Reliability, and Future Directions</div>
+          <div class="talk-description">
+            Invited talk on the comprehensive survey of using large language models as judges for various evaluation tasks.
+          </div>
+        </div>
+      </a>
+
+      <!-- EMMA ICML Talk -->
+      <a href="https://icml.cc/media/icml-2025/Slides/43702_JWS4hmd.pdf" target="_blank" class="talk-card">
+        <div class="talk-image-wrapper">
+          <img src="icml_emma.png" alt="EMMA ICML Talk" class="talk-image">
+        </div>
+        <div class="talk-content">
+          <div class="talk-venue">International Conference on Machine Learning (ICML), 2025</div>
+          <div class="talk-title">Can MLLMs Reason in Multimodality? EMMA Benchmark</div>
+          <div class="talk-description">
+            Oral presentation on our EMMA benchmark for evaluating multimodal reasoning in large language models.
+          </div>
+        </div>
+      </a>
 
       <!-- CMR Talk -->
-      <div class="talk-card">
+      <a href="https://docs.google.com/presentation/d/1O1PSqvXQAtykU5w2hUVnANbk1UdwkahSPOCiomXBEc0/edit?pli=1&slide=id.p1#slide=id.p1" target="_blank" class="talk-card">
         <div class="talk-image-wrapper">
-          <img src="https://via.placeholder.com/800x400/e67e22/ffffff?text=CMR+Scaling+Law" alt="CMR Talk" class="talk-image">
+          <img src="cmr_talk.png" alt="CMR Talk" class="talk-image">
         </div>
         <div class="talk-content">
           <div class="talk-venue">Conference on Empirical Methods in Natural Language Processing (EMNLP), 2024</div>
@@ -1272,7 +1594,7 @@
             Presentation on predicting optimal data mixture ratios for continual pre-training of large language models.
           </div>
         </div>
-      </div>
+      </a>
     </div>
     </div>
   </section>
@@ -1282,7 +1604,38 @@
     <h2 class="section-title">All Publications</h2>
     
     <ul class="pubs-list">
-      <li class="pub-item">
+      <li class="pub-item" id="pub-thinkmorph">
+        <img src="assets/thinkmorph.jpg" alt="ThinkMorph" class="pub-thumb top-align">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Fostering Multimodal Reasoning through Interleaved Image-Text Generation</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu*</strong>, Qingyun Wang*, Yunhao Ge, Baiqi Li, Zhicheng Liu, Meiqi Guo, Yuliang Yan, Haoran Zhang, Yuxiao Qu, Di Jin, Xuhui Jiang, Chao Shang, Heng Ji, Xiangliang Zhang
+          </div>
+          <div class="pub-venue">arXiv Preprint</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2510.27492" target="_blank" class="pub-link">PDF</a>
+            <a href="https://thinkmorph.github.io/" target="_blank" class="pub-link secondary">Homepage</a>
+            <a href="https://github.com/ThinkMorph/ThinkMorph" target="_blank" class="pub-link secondary">Code</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub-item" id="pub-adareasoner">
+        <img src="https://via.placeholder.com/320x213/9b59b6/ffffff?text=AdaReasoner" alt="AdaReasoner" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="#" target="_blank">AdaReasoner: Adaptive Reasoning for Multimodal Intelligence</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, et al.
+          </div>
+          <div class="pub-venue">In Preparation</div>
+        </div>
+      </li>
+
+      <li class="pub-item" id="pub-emma">
         <img src="assets/emma.png" alt="EMMA" class="pub-thumb top-align">
         <div class="pub-details">
           <div class="pub-title">
@@ -1300,8 +1653,8 @@
         </div>
       </li>
 
-      <li class="pub-item">
-        <img src="https://via.placeholder.com/320x213/667eea/ffffff?text=SRM" alt="SRM" class="pub-thumb">
+      <li class="pub-item" id="pub-srm">
+        <img src="assets/srm_award.jpg" alt="SRM" class="pub-thumb top-align">
         <div class="pub-details">
           <div class="pub-title">
             <a href="https://arxiv.org/abs/2506.00396" target="_blank">Speculative Reward Model Boosts Decision Making Ability of LLMs Cost-Effectively</a>
@@ -1317,8 +1670,8 @@
         </div>
       </li>
 
-      <li class="pub-item">
-        <img src="https://via.placeholder.com/320x213/764ba2/ffffff?text=CoRE" alt="CoRE" class="pub-thumb">
+      <li class="pub-item" id="pub-core">
+        <img src="assets/core.png" alt="CoRE" class="pub-thumb top-align">
         <div class="pub-details">
           <div class="pub-title">
             <a href="https://arxiv.org/abs/2506.00842" target="_blank">Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience</a>
@@ -1345,7 +1698,7 @@
         </div>
       </li>
 
-      <li class="pub-item">
+      <li class="pub-item" id="pub-cmr">
         <img src="https://via.placeholder.com/320x213/e67e22/ffffff?text=CMR+Scaling+Law" alt="CMR Scaling Law" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
@@ -1396,7 +1749,7 @@
         </div>
       </li>
 
-      <li class="pub-item">
+      <li class="pub-item" id="pub-stare">
         <img src="https://via.placeholder.com/320x213/16a085/ffffff?text=STARE" alt="STARE" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
@@ -1449,10 +1802,19 @@
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 Jiawei Gu. Website design inspired by <a href="https://homes.cs.washington.edu/~wwill/" target="_blank">Will Wang</a> and <a href="https://zeyofu.github.io/" target="_blank">Xingyu Fu</a>.</p>
+  <p>© 2025 Jiawei Gu.</p>
 </footer>
 
 <script>
+  // Beyond Research Toggle Functionality
+  function toggleBeyondResearch() {
+    const list = document.getElementById('beyond-research-list');
+    const toggle = document.getElementById('beyond-research-toggle');
+    
+    list.classList.toggle('expanded');
+    toggle.classList.toggle('expanded');
+  }
+
   // Talks Carousel Functionality
   const talksGrid = document.getElementById('talks-grid');
   const talksPrevBtn = document.getElementById('talks-prev');
