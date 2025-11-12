@@ -731,15 +731,19 @@
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
       border: 1px solid #e2e8f0;
+      scroll-margin-top: 100px;
     }
 
     .pub-thumb {
       width: 450px;
       height: 200px;
       border-radius: 8px;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
       background: white;
       border: 1px solid #e2e8f0;
+      padding: 10px;
+      display: block;
     }
 
     .pub-thumb.top-align {
@@ -1224,7 +1228,7 @@
   <div class="hero-content">
     <img src="./assets/images/avatar.jpg" alt="Jiawei Gu" class="profile-photo-hero">
     <h1 class="hero-title">Jiawei Gu</h1>
-    <p class="hero-motto">"Think beyond boundaries, explore unified intelligence."</p>
+    <p class="hero-motto">"Think beyond boundaries"</p>
     
     <div class="hero-links">
       <a href="mailto:Kuvvius@gmail.com" class="hero-link">
@@ -1328,7 +1332,7 @@
         </div>
       </li>
       <li class="news-item">
-        <div class="news-date">March 2025</div>
+        <div class="news-date">May 2025</div>
         <div class="news-content">
           <a href="https://arxiv.org/abs/2506.00396" target="_blank">SRM</a> has been accepted as <span class="news-highlight">Oral presentation (Top 3%)</span> at ACL 2025! 
         </div>
@@ -1356,10 +1360,10 @@
         </div>
         <div class="pub-content">
           <div class="pub-title">
-            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Fostering Multimodal Reasoning through Interleaved Image-Text Generation</a>
+            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning</a>
           </div>
           <div class="pub-authors">
-            <strong>Jiawei Gu*</strong>, Qingyun Wang*, Yunhao Ge, Baiqi Li, Zhicheng Liu, Meiqi Guo, Yuliang Yan, Haoran Zhang, Yuxiao Qu, Di Jin, Xuhui Jiang, Chao Shang, Heng Ji, Xiangliang Zhang
+            <strong>Jiawei Gu</strong>, Yunzhuo Hao, Huichen Will Wang, Linjie Li, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
           </div>
           <!-- <div class="pub-venue">International Conference on Learning Representations (ICLR), 2025 — Spotlight Presentation</div> -->
           <div class="pub-description">
@@ -1438,28 +1442,28 @@
         </div>
       </li>
 
-      <!-- CoRE -->
+      <!-- STARE -->
       <li class="featured-pub">
         <div class="pub-image-wrapper">
           <img src="assets/stare.png" alt="STARE" class="pub-image stare-align">
-          <span class="pub-badge oral">ACL 2025</span>
+          <span class="pub-badge oral">Spatial Reasoning</span>
         </div>
         <div class="pub-content">
           <div class="pub-title">
-            <a href="#" target="_blank">Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual Simulations</a>
+            <a href="https://arxiv.org/abs/2506.04633" target="_blank">Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual Simulations</a>
           </div>
           <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Ziting Xian, Yuanzhen Xie, Ye Liu, Enjie Liu, Ruichao Zhong, Mochi Gao, Yunzhi Tan, Bo Hu, Zang Li
+            Linjie Li, Mahtab Bigverdi, <strong>Jiawei Gu</strong>, Zixian Ma, Yinuo Yang, Ziang Li, Yejin Choi, Ranjay Krishna
           </div>
-          <!-- <div class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2025 — Findings</div> -->
+          <!-- <div class="pub-venue">arXiv Preprint</div> -->
           <div class="pub-description">
-            We propose CoRE, a contrastive retrieval-augmented generation framework that enhances structured knowledge reasoning through experience.
+            STARE introduces a 4K-task benchmark revealing significant gaps between models and humans on spatial reasoning through multi-step visual simulations.
           </div>
           <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">
+            <a href="https://arxiv.org/pdf/2506.04633" target="_blank" class="pub-link">
               <i class="fas fa-file-pdf"></i> PDF
             </a>
-            <a href="#" target="_blank" class="pub-link secondary">
+            <a href="https://github.com/STARE-bench/STARE" target="_blank" class="pub-link secondary">
               <i class="fab fa-github"></i> Code
             </a>
           </div>
@@ -1494,7 +1498,7 @@
       <li class="award-item">
         <div class="award-date">Feb 2023</div>
         <div class="award-content">
-          <span class="award-highlight">Five-star Volunteers</span> of Sun Yat-sen University
+          <span class="award-percentage">(≤1%)</span><span class="award-highlight">Five-star Volunteers</span> of Sun Yat-sen University
         </div>
       </li>
       <li class="award-item">
@@ -1604,14 +1608,15 @@
     <h2 class="section-title">All Publications</h2>
     
     <ul class="pubs-list">
+      <!-- 1. ThinkMorph -->
       <li class="pub-item" id="pub-thinkmorph">
-        <img src="assets/thinkmorph.jpg" alt="ThinkMorph" class="pub-thumb top-align">
+        <img src="assets/interleaved_design.png" alt="ThinkMorph" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
-            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Fostering Multimodal Reasoning through Interleaved Image-Text Generation</a>
+            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning</a>
           </div>
           <div class="pub-authors">
-            <strong>Jiawei Gu*</strong>, Qingyun Wang*, Yunhao Ge, Baiqi Li, Zhicheng Liu, Meiqi Guo, Yuliang Yan, Haoran Zhang, Yuxiao Qu, Di Jin, Xuhui Jiang, Chao Shang, Heng Ji, Xiangliang Zhang
+            <strong>Jiawei Gu</strong>, Yunzhuo Hao, Huichen Will Wang, Linjie Li, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
           </div>
           <div class="pub-venue">arXiv Preprint</div>
           <div class="pub-links">
@@ -1622,21 +1627,26 @@
         </div>
       </li>
 
+      <!-- 2. AdaReasoner -->
       <li class="pub-item" id="pub-adareasoner">
-        <img src="https://via.placeholder.com/320x213/9b59b6/ffffff?text=AdaReasoner" alt="AdaReasoner" class="pub-thumb">
+        <img src="assets/AdaVision_teaser_01.png" alt="AdaReasoner" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
-            <a href="#" target="_blank">AdaReasoner: Adaptive Reasoning for Multimodal Intelligence</a>
+            <a href="https://openreview.net/pdf?id=nUGPEmQ2ut" target="_blank">AdaReasoner: Dynamic Tool Orchestration for Iterative Visual Reasoning</a>
           </div>
           <div class="pub-authors">
             <strong>Jiawei Gu</strong>, et al.
           </div>
-          <div class="pub-venue">In Preparation</div>
+          <div class="pub-venue">Under Review</div>
+          <div class="pub-links">
+            <a href="https://openreview.net/pdf?id=nUGPEmQ2ut" target="_blank" class="pub-link">PDF</a>
+          </div>
         </div>
       </li>
 
+      <!-- 3. EMMA -->
       <li class="pub-item" id="pub-emma">
-        <img src="assets/emma.png" alt="EMMA" class="pub-thumb top-align">
+        <img src="assets/emma_motivation.png" alt="EMMA" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
             <a href="https://www.arxiv.org/abs/2501.05444" target="_blank">Can MLLMs Reason in Multimodality? EMMA: An Enhanced MultiModal ReAsoning Benchmark</a>
@@ -1644,113 +1654,19 @@
           <div class="pub-authors">
             Yunzhuo Hao*, <strong>Jiawei Gu*</strong>, Huichen Will Wang*, Linjie Li*, Zhengyuan Yang, Lijuan Wang, Yu Cheng
           </div>
-          <div class="pub-venue">ICML 2025 (Oral, top 0.9%)</div>
+          <div class="pub-venue">ICML 2025 (Oral, top 1%)</div>
           <div class="pub-links">
             <a href="https://www.arxiv.org/pdf/2501.05444" target="_blank" class="pub-link">PDF</a>
             <a href="https://emma-benchmark.github.io/" target="_blank" class="pub-link secondary">Homepage</a>
             <a href="https://github.com/EMMA-Bench/EMMA" target="_blank" class="pub-link secondary">Code</a>
+            <a href="https://icml.cc/media/icml-2025/Slides/43702_JWS4hmd.pdf" target="_blank" class="pub-link secondary">Slides</a>
           </div>
         </div>
       </li>
 
-      <li class="pub-item" id="pub-srm">
-        <img src="assets/srm_award.jpg" alt="SRM" class="pub-thumb top-align">
-        <div class="pub-details">
-          <div class="pub-title">
-            <a href="https://arxiv.org/abs/2506.00396" target="_blank">Speculative Reward Model Boosts Decision Making Ability of LLMs Cost-Effectively</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Shangsong Liang
-          </div>
-          <div class="pub-venue">ACL 2025 (Oral)</div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2506.00396" target="_blank" class="pub-link">PDF</a>
-            <a href="https://github.com/Kuvvius/Speculative-RM" target="_blank" class="pub-link secondary">Code</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="pub-item" id="pub-core">
-        <img src="assets/core.png" alt="CoRE" class="pub-thumb top-align">
-        <div class="pub-details">
-          <div class="pub-title">
-            <a href="https://arxiv.org/abs/2506.00842" target="_blank">Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Ziting Xian, Yuanzhen Xie, Ye Liu, Enjie Liu, Ruichao Zhong, Mochi Gao, Yunzhi Tan, Bo Hu, Zang Li
-          </div>
-          <div class="pub-venue">ACL 2025 Findings</div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2506.00842" target="_blank" class="pub-link">PDF</a>
-            <a href="https://github.com/Kuvvius/CoRE" target="_blank" class="pub-link secondary">Code</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="pub-item">
-        <img src="https://via.placeholder.com/320x213/9b59b6/ffffff?text=MolRAG" alt="MolRAG" class="pub-thumb">
-        <div class="pub-details">
-          <div class="pub-title">MolRAG: Unlocking the Power of Large Language Models for Molecular Property Prediction</div>
-          <div class="pub-authors">
-            Ziting Xian, <strong>Jiawei Gu</strong>, Lingbo Li, Shangsong Liang
-          </div>
-          <div class="pub-venue">ACL 2025</div>
-        </div>
-      </li>
-
-      <li class="pub-item" id="pub-cmr">
-        <img src="https://via.placeholder.com/320x213/e67e22/ffffff?text=CMR+Scaling+Law" alt="CMR Scaling Law" class="pub-thumb">
-        <div class="pub-details">
-          <div class="pub-title">
-            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank">CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Zacc Yang, Chuanghao Ding, Rui Zhao, Fei Tan
-          </div>
-          <div class="pub-venue">EMNLP 2024</div>
-          <div class="pub-links">
-            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank" class="pub-link">PDF</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="pub-item">
-        <img src="https://via.placeholder.com/320x213/34495e/ffffff?text=LLM-as-a-Judge" alt="LLM-as-a-Judge Survey" class="pub-thumb">
-        <div class="pub-details">
-          <div class="pub-title">
-            <a href="https://arxiv.org/abs/2411.15594" target="_blank">A Survey on LLM-as-a-Judge</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Xuhui Jiang, Zhichao Shi, Hexiang Tan, Xuehao Zhai, Chengjin Xu, Wei Li, Yinghan Shen, Shengjie Ma, Honghao Liu, Saizhuo Wang, Kun Zhang, Yuanzhuo Wang, Wen Gao, Lionel Ni, Jian Guo
-          </div>
-          <div class="pub-venue">arXiv Preprint</div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2411.15594" target="_blank" class="pub-link">PDF</a>
-            <a href="https://awesome-llm-as-a-judge.github.io/" target="_blank" class="pub-link secondary">Homepage</a>
-            <a href="https://github.com/DataArcTech/LLM-as-a-Judge" target="_blank" class="pub-link secondary">Code</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="pub-item">
-        <img src="https://via.placeholder.com/320x213/e74c3c/ffffff?text=MathIF" alt="MathIF" class="pub-thumb">
-        <div class="pub-details">
-          <div class="pub-title">
-            <a href="https://arxiv.org/abs/2505.14810" target="_blank">Scaling Reasoning, Losing Control: Evaluating Instruction Following in Large Reasoning Models</a>
-          </div>
-          <div class="pub-authors">
-            Tingchen Fu, <strong>Jiawei Gu</strong>, Yafu Li, Xiaoye Qu, Yu Cheng
-          </div>
-          <div class="pub-venue">arXiv Preprint</div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2505.14810" target="_blank" class="pub-link">PDF</a>
-            <a href="https://github.com/TingchenFu/MathIF" target="_blank" class="pub-link secondary">Code</a>
-          </div>
-        </div>
-      </li>
-
+      <!-- 4. STARE -->
       <li class="pub-item" id="pub-stare">
-        <img src="https://via.placeholder.com/320x213/16a085/ffffff?text=STARE" alt="STARE" class="pub-thumb">
+        <img src="assets/stare_teaser_01.png" alt="STARE" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
             <a href="https://arxiv.org/abs/2506.04633" target="_blank">Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual Simulations</a>
@@ -1766,8 +1682,83 @@
         </div>
       </li>
 
+      <!-- 5. SRM -->
+      <li class="pub-item" id="pub-srm">
+        <img src="assets/srm_method.png" alt="SRM" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2506.00396" target="_blank">Speculative Reward Model Boosts Decision Making Ability of LLMs Cost-Effectively</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, Shangsong Liang
+          </div>
+          <div class="pub-venue">ACL 2025 (Oral, top 3%), Best Paper Honorable Mention Award</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2506.00396" target="_blank" class="pub-link">PDF</a>
+            <a href="https://github.com/Kuvvius/Speculative-RM" target="_blank" class="pub-link secondary">Code</a>
+            <a href="https://docs.google.com/presentation/d/1R079wHrpwQR06vRbW-SlCptUBgx5LqXO/edit?slide=id.p1#slide=id.p1" target="_blank" class="pub-link secondary">Slides</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6. CMR -->
+      <li class="pub-item" id="pub-cmr">
+        <img src="assets/cmr_method.png" alt="CMR Scaling Law" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank">CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, Zacc Yang, Chuanghao Ding, Rui Zhao, Fei Tan
+          </div>
+          <div class="pub-venue">EMNLP 2024</div>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank" class="pub-link">PDF</a>
+            <a href="https://docs.google.com/presentation/d/1O1PSqvXQAtykU5w2hUVnANbk1UdwkahSPOCiomXBEc0/edit?pli=1&slide=id.p1#slide=id.p1" target="_blank" class="pub-link secondary">Slides</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 7. CoRE -->
+      <li class="pub-item" id="pub-core">
+        <img src="assets/core.png" alt="CoRE" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2506.00842" target="_blank">Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, Ziting Xian, Yuanzhen Xie, Ye Liu, Enjie Liu, Ruichao Zhong, Mochi Gao, Yunzhi Tan, Bo Hu, Zang Li
+          </div>
+          <div class="pub-venue">ACL 2025</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2506.00842" target="_blank" class="pub-link">PDF</a>
+            <a href="https://github.com/Kuvvius/CoRE" target="_blank" class="pub-link secondary">Code</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 8. LLM-as-a-Judge Survey -->
       <li class="pub-item">
-        <img src="https://via.placeholder.com/320x213/2980b9/ffffff?text=FullFront" alt="FullFront" class="pub-thumb">
+        <img src="assets/how_to_judge.png" alt="LLM-as-a-Judge Survey" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2411.15594" target="_blank">A Survey on LLM-as-a-Judge</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, Xuhui Jiang, Zhichao Shi, Hexiang Tan, Xuehao Zhai, Chengjin Xu, Wei Li, Yinghan Shen, Shengjie Ma, Honghao Liu, Saizhuo Wang, Kun Zhang, Yuanzhuo Wang, Wen Gao, Lionel Ni, Jian Guo
+          </div>
+          <div class="pub-venue">arXiv Preprint</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2411.15594" target="_blank" class="pub-link">PDF</a>
+            <a href="https://awesome-llm-as-a-judge.github.io/" target="_blank" class="pub-link secondary">Homepage</a>
+            <a href="https://event.baai.ac.cn/activities/878" target="_blank" class="pub-link secondary">Talk</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 9. FullFront -->
+      <li class="pub-item">
+        <img src="assets/fullfront_motivation.png" alt="FullFront" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
             <a href="https://arxiv.org/abs/2505.17399" target="_blank">FullFront: Benchmarking MLLMs Across the Full Front-End Engineering Workflow</a>
@@ -1782,6 +1773,41 @@
           </div>
         </div>
       </li>
+
+      <!-- 10. MolRAG -->
+      <li class="pub-item">
+        <img src="assets/molrag_method.png" alt="MolRAG" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://aclanthology.org/2025.acl-long.755/" target="_blank">MolRAG: Unlocking the Power of Large Language Models for Molecular Property Prediction</a>
+          </div>
+          <div class="pub-authors">
+            Ziting Xian, <strong>Jiawei Gu</strong>, Lingbo Li, Shangsong Liang
+          </div>
+          <div class="pub-venue">ACL 2025</div>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2025.acl-long.755.pdf" target="_blank" class="pub-link">PDF</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 11. MathIF -->
+      <li class="pub-item">
+        <img src="assets/mathif_method.png" alt="MathIF" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2505.14810" target="_blank">Scaling Reasoning, Losing Control: Evaluating Instruction Following in Large Reasoning Models</a>
+          </div>
+          <div class="pub-authors">
+            Tingchen Fu, <strong>Jiawei Gu</strong>, Yafu Li, Xiaoye Qu, Yu Cheng
+          </div>
+          <div class="pub-venue">arXiv Preprint</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2505.14810" target="_blank" class="pub-link">PDF</a>
+            <a href="https://github.com/TingchenFu/MathIF" target="_blank" class="pub-link secondary">Code</a>
+          </div>
+        </div>
+      </li>
     </ul>
   </section>
 
@@ -1791,10 +1817,7 @@
     
     <div class="services-content">
       <p>
-        <strong>Conference Reviewer:</strong> <a href="https://neurips.cc/Conferences/2024" target="_blank">NeurIPS 2024</a>, <a href="https://iclr.cc/" target="_blank">ICLR 2025</a>, <a href="https://icml.cc/" target="_blank">ICML 2025</a>, <a href="https://aclrollingreview.org/" target="_blank">ACL Rolling Review</a>
-      </p>
-      <p>
-        <strong>Journal Reviewer:</strong> <a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank">Neurocomputing</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">IEEE Transactions on Pattern Analysis and Machine Intelligence</a>
+        <strong>Conference Reviewer:</strong> WWW2025, ICLR 2026, CVPR2026, ACL Rolling Review
       </p>
     </div>
   </section>
