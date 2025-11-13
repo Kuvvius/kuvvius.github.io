@@ -1,0 +1,36 @@
+<!-- Logo Option 1: Multimodal Fusion -->
+<!-- 概念：语言(文字)和视觉(眼睛)的融合，形成统一的智能 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 外圈：代表统一的智能边界 -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#grad1)" stroke-width="3" opacity="0.3"/>
+  
+  <!-- 左侧：文字/语言符号 (三条横线代表文本) -->
+  <g transform="translate(45, 100)">
+    <line x1="0" y1="-20" x2="30" y2="-20" stroke="url(#grad1)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="url(#grad1)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="20" x2="30" y2="20" stroke="url(#grad1)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 右侧：视觉符号 (眼睛轮廓) -->
+  <g transform="translate(125, 100)">
+    <ellipse cx="0" cy="0" rx="25" ry="18" fill="none" stroke="url(#grad1)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="8" fill="url(#grad1)"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+  
+  <!-- 中心：连接点，代表融合 -->
+  <circle cx="100" cy="100" r="12" fill="url(#grad1)" opacity="0.8"/>
+  <circle cx="100" cy="100" r="6" fill="white"/>
+  
+  <!-- 连接线：展示模态间的互动 -->
+  <path d="M 75 100 Q 100 85 125 100" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.4"/>
+  <path d="M 75 100 Q 100 115 125 100" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.4"/>
+</svg>
+

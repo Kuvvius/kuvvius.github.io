@@ -1,0 +1,35 @@
+<!-- Logo Option 3: Complementary Modalities -->
+<!-- 概念：Language (L) 和 Vision (V) 作为互补工具 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 外框：六边形代表多面性 -->
+  <polygon points="100,30 150,60 150,120 100,150 50,120 50,60" 
+           fill="none" stroke="url(#grad3)" stroke-width="3" opacity="0.4"/>
+  
+  <!-- 左半部分：L for Language -->
+  <g opacity="0.85">
+    <rect x="55" y="75" width="5" height="50" fill="#667eea" rx="2"/>
+    <rect x="55" y="120" width="30" height="5" fill="#667eea" rx="2"/>
+  </g>
+  
+  <!-- 右半部分：∀ (倒V) for Vision/Visual -->
+  <g opacity="0.85">
+    <path d="M 115 75 L 127.5 115 L 140 75" fill="none" stroke="#764ba2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="121" y1="100" x2="134" y2="100" stroke="#764ba2" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 中心连接符号 -->
+  <circle cx="97.5" cy="97.5" r="10" fill="url(#grad3)" opacity="0.3"/>
+  
+  <!-- 底部小字 (可选) -->
+  <text x="100" y="170" font-family="Inter, sans-serif" font-size="14" font-weight="600" 
+        fill="#667eea" text-anchor="middle" opacity="0.7">MULTIMODAL</text>
+</svg>
+

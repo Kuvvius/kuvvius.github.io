@@ -1,0 +1,22 @@
+<!-- Logo Option 5 Bold: Extra Bold JW -->
+<!-- 概念：超粗字体，最大化视觉冲击力 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad5bold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 圆形背景 -->
+  <circle cx="100" cy="100" r="80" fill="url(#grad5bold)"/>
+  
+  <!-- J 字母 - 超粗 -->
+  <path d="M 48 55 L 48 100 Q 48 125 73 125 L 90 125" 
+        fill="none" stroke="white" stroke-width="16" stroke-linecap="round"/>
+  
+  <!-- W 字母 - 超粗 -->
+  <path d="M 95 70 L 112 125 L 129 70 L 146 125" 
+        fill="none" stroke="white" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
