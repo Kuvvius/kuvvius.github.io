@@ -66,6 +66,9 @@ author:
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square" # Academicons Google Scholar 图标
       url: "https://scholar.google.com/citations?user=7p8yEHAAAAAJ&hl=En"
+    - label: "Semantic"
+      icon: "fas fa-fw fa-book-open" # Font Awesome 图标
+      url: "https://www.semanticscholar.org/author/Jiawei-Gu/2216587705"
     - label: "GitHub"
       icon: "fab fa-fw fa-github" # Font Awesome GitHub 图标
       url: "https://github.com/Kuvvius"
