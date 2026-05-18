@@ -732,31 +732,31 @@
     .pubs-list {
       list-style: none;
       display: grid;
-      gap: 0.65rem;
+      gap: 0.15rem;
     }
 
     .pub-item {
       display: grid;
-      grid-template-columns: 450px 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 188px 1fr;
+      gap: 0.95rem;
       align-items: start;
-      background: #f8fafc;
-      padding: 0.8rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      border: 1px solid #e2e8f0;
+      background: transparent;
+      padding: 0.45rem 0;
+      border-radius: 0;
+      box-shadow: none;
+      border: none;
       scroll-margin-top: 100px;
     }
 
     .pub-thumb {
-      width: 450px;
-      height: 200px;
-      border-radius: 8px;
+      width: 188px;
+      height: 118px;
+      border-radius: 4px;
       object-fit: contain;
       object-position: center;
       background: white;
-      border: 1px solid #e2e8f0;
-      padding: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 4px;
       display: block;
     }
 
@@ -767,15 +767,15 @@
     .pub-details {
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 0.18rem;
     }
 
     .pub-details .pub-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0;
       color: #1e293b;
-      line-height: 1.4;
+      line-height: 1.35;
     }
 
     .pub-details .pub-title a {
@@ -789,9 +789,9 @@
     }
 
     .pub-details .pub-authors {
-      font-size: 1.05rem;
+      font-size: 0.98rem;
       color: #64748b;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     .pub-details .pub-authors strong {
@@ -801,50 +801,62 @@
     }
 
     .pub-details .pub-venue {
-      font-size: 1.05rem;
-      color: #667eea;
-      font-weight: 700;
+      font-size: 0.98rem;
+      color: #1e293b;
+      font-weight: 600;
     }
 
     .pub-details .pub-links {
-      margin-top: 0.75rem;
+      margin-top: 0.05rem;
       display: flex;
-      gap: 0.75rem;
+      gap: 0.35rem;
       flex-wrap: wrap;
     }
 
     .pub-details .pub-link {
-      padding: 0.5rem 1.25rem;
-      background: #667eea;
-      color: white;
+      padding: 0;
+      background: none;
+      color: #667eea;
       text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.9rem;
+      border-radius: 0;
+      font-size: 0.92rem;
       font-weight: 500;
-      transition: all 0.3s;
-      display: inline-block;
+      transition: color 0.2s;
+      display: inline;
+      line-height: 1.2;
+      text-transform: lowercase;
     }
 
     .pub-details .pub-link:hover {
-      background: #667eea;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(102,126,234,0.3);
+      background: none;
+      color: #667eea;
+      transform: none;
+      box-shadow: none;
+      text-decoration: underline;
     }
 
     .pub-details .pub-link.secondary {
-      background: white;
+      background: none;
       color: #667eea;
-      border: 1.5px solid #667eea;
+      border: none;
     }
 
     .pub-details .pub-link.secondary:hover {
-      background: #667eea;
-      color: white;
+      background: none;
+      color: #667eea;
     }
 
     .pub-details .pub-link {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
+      padding: 0;
+      font-size: 0.92rem;
+    }
+
+    .pub-details .pub-link::before {
+      content: '[';
+    }
+
+    .pub-details .pub-link::after {
+      content: ']';
     }
 
     /* Talks Section - Horizontal Scrolling */
@@ -1059,13 +1071,13 @@
       }
 
       .pub-item {
-        grid-template-columns: 400px 1fr;
-        gap: 2rem;
+        grid-template-columns: 164px 1fr;
+        gap: 0.85rem;
       }
 
       .pub-thumb {
-        width: 400px;
-        height: 180px;
+        width: 164px;
+        height: 104px;
       }
     }
 
@@ -1192,14 +1204,14 @@
       }
 
       .pub-item {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: 136px 1fr;
+        gap: 0.75rem;
       }
 
       .pub-thumb {
-        width: 100%;
-        height: auto;
-        max-height: 400px;
+        width: 136px;
+        height: 92px;
+        max-height: none;
       }
 
       .pub-image {
@@ -1555,7 +1567,7 @@
           <img src="qingyuan_talk_2026.png" alt="Qingyuan Club Talk" class="talk-image">
         </div>
         <div class="talk-content">
-          <div class="talk-venue">Qingyuan Club Academic Annual Meeting, 2026</div>
+          <div class="talk-venue">Qingyuan Academic Annual Meeting, 2026</div>
           <div class="talk-title">AI Frontier: Toward World Models</div>
           <div class="talk-description">
             Featured presentation at the Qingyuan Club 2026 Academic Annual Meeting on multimodal reasoning, evaluation, and the path toward world models.
@@ -1777,25 +1789,44 @@
         </div>
       </li>
 
-      <!-- 9. FullFront -->
+      <!-- 9. Gym-V -->
       <li class="pub-item">
-        <img src="assets/fullfront_motivation.png" alt="FullFront" class="pub-thumb">
+        <img src="gym_v_paper.png" alt="Gym-V" class="pub-thumb">
         <div class="pub-details">
           <div class="pub-title">
-            <a href="https://arxiv.org/abs/2505.17399" target="_blank">FullFront: Benchmarking MLLMs Across the Full Front-End Engineering Workflow</a>
+            <a href="https://arxiv.org/abs/2603.15432" target="_blank">Gym-V: A Unified Vision Environment System for Agentic Vision Research</a>
           </div>
           <div class="pub-authors">
-            Haoyu Sun, Huichen Will Wang, <strong>Jiawei Gu</strong>, Linjie Li, Yu Cheng
+            Fanqing Meng*, Lingxiao Du*, <strong>Jiawei Gu*</strong>, Jiaqi Liao, Linjie Li, Zijian Wu, Xiangyan Liu, Ziqi Zhao, Mengkang Hu, Zichen Liu, Jiaheng Zhang, Michael Qizhe Shieh
           </div>
           <div class="pub-venue">arXiv Preprint</div>
           <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2505.17399" target="_blank" class="pub-link">PDF</a>
-            <a href="https://github.com/Mikivishy/FullFront" target="_blank" class="pub-link secondary">Code</a>
+            <a href="https://arxiv.org/pdf/2603.15432" target="_blank" class="pub-link">PDF</a>
+            <a href="https://github.com/ModalMinds/gym-v" target="_blank" class="pub-link secondary">Code</a>
           </div>
         </div>
       </li>
 
-      <!-- 10. MolRAG -->
+      <!-- 10. ClawMark -->
+      <li class="pub-item">
+        <img src="clawmark_paper.png" alt="ClawMark" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2604.23781" target="_blank">ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents</a>
+          </div>
+          <div class="pub-authors">
+            Fanqing Meng, Lingxiao Du, Zijian Wu, Guanzheng Chen, Xiangyan Liu, Jiaqi Liao, Chonghe Jiang, Zhenglin Wan, <strong>Jiawei Gu</strong>, Pengfei Zhou, ..., Jiaheng Zhang, Zeyu Zheng, Mengkang Hu, Michael Qizhe Shieh
+          </div>
+          <div class="pub-venue">arXiv Preprint</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2604.23781" target="_blank" class="pub-link">PDF</a>
+            <a href="https://claw-mark.com/" target="_blank" class="pub-link secondary">Homepage</a>
+            <a href="https://github.com/evolvent-ai/ClawMark" target="_blank" class="pub-link secondary">Code</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 11. MolRAG -->
       <li class="pub-item">
         <img src="assets/molrag_method.png" alt="MolRAG" class="pub-thumb">
         <div class="pub-details">
@@ -1812,7 +1843,7 @@
         </div>
       </li>
 
-      <!-- 11. MathIF -->
+      <!-- 12. MathIF -->
       <li class="pub-item">
         <img src="assets/mathif_method.png" alt="MathIF" class="pub-thumb">
         <div class="pub-details">
@@ -1822,10 +1853,28 @@
           <div class="pub-authors">
             Tingchen Fu, <strong>Jiawei Gu</strong>, Yafu Li, Xiaoye Qu, Yu Cheng
           </div>
-          <div class="pub-venue">arXiv Preprint</div>
+          <div class="pub-venue">ACL 2026</div>
           <div class="pub-links">
             <a href="https://arxiv.org/pdf/2505.14810" target="_blank" class="pub-link">PDF</a>
             <a href="https://github.com/TingchenFu/MathIF" target="_blank" class="pub-link secondary">Code</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 13. FullFront -->
+      <li class="pub-item">
+        <img src="assets/fullfront_motivation.png" alt="FullFront" class="pub-thumb">
+        <div class="pub-details">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2505.17399" target="_blank">FullFront: Benchmarking MLLMs Across the Full Front-End Engineering Workflow</a>
+          </div>
+          <div class="pub-authors">
+            Haoyu Sun, Huichen Will Wang, <strong>Jiawei Gu</strong>, Linjie Li, Yu Cheng
+          </div>
+          <div class="pub-venue">arXiv Preprint</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2505.17399" target="_blank" class="pub-link">PDF</a>
+            <a href="https://github.com/Mikivishy/FullFront" target="_blank" class="pub-link secondary">Code</a>
           </div>
         </div>
       </li>
@@ -1838,7 +1887,7 @@
     
     <div class="services-content">
       <p>
-        <strong>Conference Reviewer:</strong> WWW 2025, ICLR 2026, CVPR 2026, ACL Rolling Review, ICML 2026 (Gold Reviewer)
+        <strong>Conference Reviewer:</strong> WWW 2025, ICLR 2026, CVPR 2026, ECCV 2026, NeurIPS 2026, ACL Rolling Review, ICML 2026 (🏅 <strong>Gold Reviewer</strong>)
       </p>
     </div>
   </section>
@@ -1846,7 +1895,7 @@
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 Jiawei Gu.</p>
+  <p>© 2026 Jiawei Gu.</p>
 </footer>
 
 <script>
