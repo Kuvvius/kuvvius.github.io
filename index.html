@@ -25,6 +25,7 @@
 
     html {
       scroll-behavior: smooth;
+      font-size: 17.5px;
     }
 
     body {
@@ -1234,6 +1235,38 @@
         justify-content: center;
       }
     }
+
+    /* Folding: older news and featured TL;DR */
+    .news-more > summary,
+    .pub-tldr > summary {
+      list-style: none;
+      cursor: pointer;
+      color: #667eea;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .news-more > summary::-webkit-details-marker,
+    .pub-tldr > summary::-webkit-details-marker { display: none; }
+    .news-more > summary { padding: 0.6rem 0 0.2rem; }
+    .news-more > summary::after { content: " \25BE"; }
+    .news-more[open] > summary::after { content: " \25B4"; }
+    .news-more .news-list { margin-top: 0.4rem; }
+    .pub-tldr { margin-bottom: 1rem; }
+    .pub-tldr > summary::before { content: "+ "; }
+    .pub-tldr[open] > summary::before { content: "\2212  "; }
+    .pub-tldr .pub-description { margin: 0.5rem 0 0; }
+
+    /* Chinese name inside the bio */
+    @font-face {
+      font-family: "ChillKai Name";
+      src: url("assets/fonts/chillkai-name.woff2") format("woff2");
+      font-display: swap;
+    }
+    .intro-zh {
+      font-family: "ChillKai Name", "Kaiti SC", "STKaiti", "KaiTi", serif;
+      font-size: 1.05em;
+      color: #334155;
+    }
   </style>
 </head>
 <body>
@@ -1245,8 +1278,8 @@
     <ul class="navbar-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#news">News</a></li>
-      <li><a href="#awards">Awards</a></li>
       <li><a href="#talks">Talks</a></li>
+      <li><a href="#awards">Awards</a></li>
       <li><a href="#publications">All Publications</a></li>
     </ul>
   </div>
@@ -1280,61 +1313,12 @@
 <div class="main-container">
   <!-- About -->
   <section class="section" id="about">
-    <h2 class="section-title">About Me</h2>
     <div class="about-content">
       <p>
-        I am an incoming PhD student at the University of Washington, advised by <a href="https://www.ranjaykrishna.com/" target="_blank">Prof. Ranjay Krishna</a>. I also work closely with <a href="https://yejinc.github.io/" target="_blank">Yejin Choi</a> and <a href="https://limanling.github.io/" target="_blank">Manling Li</a>.
+        Hi, I am <strong>Jiawei Gu</strong> <span class="intro-zh" lang="zh-CN">(顾嘉炜)</span>, a PhD student in Computer Science at the University of Washington, advised by <a href="https://www.ranjaykrishna.com/" target="_blank">Ranjay Krishna</a>.
+        I also work closely with <a href="https://yejinc.github.io/" target="_blank">Yejin Choi</a> and <a href="https://limanling.github.io/" target="_blank">Manling Li</a>.
+        I study <strong>multimodal reasoning</strong>: building models that think <em>in</em> modalities, not just <em>with</em> them.
       </p>
-      
-      <p>
-        <u>My research journey began with advancing <strong>efficient and reliable reasoning</strong> in language models.</u> Through <a href="#pub-cmr">CMR Scaling Law</a>, <a href="#pub-srm">SRM</a>, and <a href="#pub-core">CoRE</a>, I developed methods to inject domain knowledge and optimize reasoning efficiency across training and inference stages. However, they also revealed a fundamental limitation: <strong>language alone cannot capture the full spectrum of reasoning.</strong> Real-world problems often require spatial and visual understanding that words struggle to encode (<a href="#pub-emma">EMMA</a>, <a href="#pub-stare">STARE</a> benchmark).
-      </p>
-      
-      <p>
-        <u>This shifted my focus toward <strong>unified multimodal intelligence</strong></u>, enabling models to <strong style="color: #667eea;">think <em>in</em> modalities, not just <em>with</em> them</strong>. Through <a href="#pub-adareasoner">AdaReasoner</a> and <a href="#pub-thinkmorph">ThinkMorph</a>, I explore how modalities function as complementary tools: language for logic, vision for spatial operations. My goal is to build systems that <strong>think beyond boundaries</strong>, seamlessly integrating diverse modalities to form <strong>genuine multimodal reasoning</strong> that is both efficient and reliable.
-      </p>
-      
-      <p>
-        Beyond research, I embrace diverse experiences and challenges. <em>(Click below to explore more)</em>
-      </p>
-
-      <!-- Beyond Research -->
-      <div class="beyond-research">
-        <div class="beyond-research-header" onclick="toggleBeyondResearch()">
-          <h3 class="beyond-research-title">
-            <span class="beyond-research-title-main">Beyond Research</span>
-            <span class="beyond-research-title-sub">Many Roles, One Journey</span>
-          </h3>
-          <span class="beyond-research-toggle" id="beyond-research-toggle"></span>
-        </div>
-        <ul class="beyond-research-list" id="beyond-research-list">
-          <li class="beyond-research-item">
-            <img src="assets/experience-student-union.jpg" alt="Student Union President" class="beyond-research-image" loading="lazy">
-            <div class="beyond-research-text">
-              <span class="beyond-research-label">Student Union President</span>
-              Led the student union at Sun Yat-sen University, developing leadership and presentation skills.            </div>
-          </li>
-          <li class="beyond-research-item">
-            <img src="assets/experience-teaching.jpg" alt="Rural Volunteer Teacher" class="beyond-research-image" loading="lazy">
-            <div class="beyond-research-text">
-              <span class="beyond-research-label">Rural Volunteer Teacher</span>
-              Volunteered as a high school math teacher in Tibet, inspiring students and fostering their love for learning.          </div>
-          </li>
-          <li class="beyond-research-item">
-            <img src="assets/experience-skydiving.jpg" alt="Adventure Enthusiast" class="beyond-research-image" loading="lazy">
-            <div class="beyond-research-text">
-              <span class="beyond-research-label">Adventure Enthusiast</span>
-              Passionate about challenges, from skydiving to bungee jumping, constantly pushing personal boundaries.            </div>
-          </li>
-          <li class="beyond-research-item placeholder">
-            <div class="beyond-research-image placeholder"></div>
-            <div class="beyond-research-text">
-              <span class="beyond-research-label">More Roles Unlocking...</span>
-              Continuously exploring new experiences and challenges.
-            </div>
-          </li>
-        </ul>
-      </div>
     </div>
   </section>
 
@@ -1378,171 +1362,18 @@
           <a href="https://arxiv.org/abs/2506.00396" target="_blank">SRM</a> has been accepted as <span class="news-highlight">Oral presentation (Top 3%)</span> at ACL 2025! 
         </div>
       </li>
+    </ul>
+    <details class="news-more">
+      <summary>More news</summary>
+      <ul class="news-list">
       <li class="news-item">
         <div class="news-date">Nov 2024</div>
         <div class="news-content">
           The preprint of <a href="https://arxiv.org/abs/2411.15594" target="_blank">A Survey on LLM-as-a-Judge</a> was released. <a href="https://x.com/omarsar0/status/1861411159913472229" target="_blank" style="color: #667eea; text-decoration: none;">[Twitter]</a> (<span class="news-attention">50K+</span> community engagement)
         </div>
       </li>
-    </ul>
-  </section>
-
-  <!-- Featured Publications -->
-  <section class="section" id="featured">
-    <h2 class="section-title">Selected Publications</h2>
-    <p class="featured-note">* denotes equal contribution</p>
-    
-    <ul class="featured-pubs-list">
-      <!-- ThinkMorph -->
-      <li class="featured-pub">
-        <div class="pub-image-wrapper">
-          <img src="assets/thinkmorph.jpg" alt="ThinkMorph" class="pub-image top-align" loading="lazy">
-          <span class="pub-badge spotlight"> 🔥 Newest</span>
-        </div>
-        <div class="pub-content">
-          <div class="pub-title">
-            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu*</strong>, Yunzhuo Hao*, Huichen Will Wang*, Linjie Li*, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
-          </div>
-          <!-- <div class="pub-venue">International Conference on Learning Representations (ICLR), 2025 — Spotlight Presentation</div> -->
-          <div class="pub-description">
-            ThinkMorph enables true multimodal chain-of-thought reasoning where text and vision complement each other, achieving emergent intelligence and strong generalization with just 24K training samples.
-          </div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2510.27492" target="_blank" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-            <a href="https://thinkmorph.github.io/" target="_blank" class="pub-link secondary">
-              <i class="fas fa-home"></i> Homepage
-            </a>
-            <a href="https://github.com/ThinkMorph/ThinkMorph" target="_blank" class="pub-link secondary">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </li>
-
-      <!-- EMMA -->
-      <li class="featured-pub">
-        <div class="pub-image-wrapper">
-          <img src="assets/emma.png" alt="EMMA" class="pub-image top-align" loading="lazy">
-          <span class="pub-badge oral">ICML 2025 Oral</span>
-        </div>
-        <div class="pub-content">
-          <div class="pub-title">
-            <a href="https://www.arxiv.org/abs/2501.05444" target="_blank">Can MLLMs Reason in Multimodality? EMMA: An Enhanced MultiModal ReAsoning Benchmark</a>
-          </div>
-          <div class="pub-authors">
-            Yunzhuo Hao*, <strong>Jiawei Gu*</strong>, Huichen Will Wang*, Linjie Li*, Zhengyuan Yang, Lijuan Wang, Yu Cheng
-          </div>
-          <!-- <div class="pub-venue">International Conference on Machine Learning (ICML), 2025 — Oral Presentation (Top 0.9%)</div> -->
-          <div class="pub-description">
-            We contribute EMMA (Enhanced MultiModal reAsoning), a benchmark targeting organic multimodal reasoning across mathematics, physics, chemistry, and coding. SOTA models struggle big time.
-          </div>
-          <div class="pub-links">
-            <a href="https://www.arxiv.org/pdf/2501.05444" target="_blank" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-            <a href="https://emma-benchmark.github.io/" target="_blank" class="pub-link secondary">
-              <i class="fas fa-home"></i> Homepage
-            </a>
-            <a href="https://github.com/EMMA-Bench/EMMA" target="_blank" class="pub-link secondary">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </li>
-
-      <!-- SRM -->
-      <li class="featured-pub">
-        <div class="pub-image-wrapper">
-          <img src="assets/srm_award.jpg" alt="SRM" class="pub-image srm-align" loading="lazy">
-          <span class="pub-badge oral">ACL 2025 Oral + 🏆 Best Paper Honorable Mention </span>
-        </div>
-        <div class="pub-content">
-          <div class="pub-title">
-            <a href="https://arxiv.org/abs/2506.00396" target="_blank">Speculative Reward Model Boosts Decision Making Ability of LLMs Cost-Effectively</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Shangsong Liang
-          </div>
-          <!-- <div class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2025 — Oral Presentation</div> -->
-          <div class="pub-description">
-            We propose Speculative Reward Models that dramatically improve LLM decision-making efficiency while maintaining high accuracy.
-          </div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2506.00396" target="_blank" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-            <a href="https://github.com/Kuvvius/Speculative-RM" target="_blank" class="pub-link secondary">
-              <i class="fab fa-github"></i> Code
-            </a>
-          </div>
-        </div>
-      </li>
-
-      <!-- CMR Scaling Law -->
-      <li class="featured-pub">
-        <div class="pub-image-wrapper">
-          <img src="assets/cmr_method.png" alt="CMR Scaling Law" class="pub-image top-align" loading="lazy">
-          <span class="pub-badge oral">EMNLP 2024</span>
-        </div>
-        <div class="pub-content">
-          <div class="pub-title">
-            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank">CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models</a>
-          </div>
-          <div class="pub-authors">
-            <strong>Jiawei Gu</strong>, Zacc Yang, Chuanghao Ding, Rui Zhao, Fei Tan
-          </div>
-          <!-- <div class="pub-venue">EMNLP 2024</div> -->
-          <div class="pub-description">
-            We propose CMR Scaling Law to predict critical mixture ratios for continual pre-training, enabling efficient domain adaptation while preventing catastrophic forgetting.
-          </div>
-          <div class="pub-links">
-            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-            <a href="https://docs.google.com/presentation/d/1O1PSqvXQAtykU5w2hUVnANbk1UdwkahSPOCiomXBEc0/edit?pli=1&slide=id.p1#slide=id.p1" target="_blank" class="pub-link secondary">
-              <i class="fas fa-person-chalkboard"></i> Slides
-            </a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Awards -->
-  <section class="section" id="awards">
-    <h2 class="section-title">Awards</h2>
-    
-    <ul class="awards-list">
-      <li class="award-item">
-        <div class="award-date">Mar 2026</div>
-        <div class="award-content">
-          <span class="award-percentage">(≤5%)</span><a href="https://www.engr.washington.edu/current/deans_scholarships" target="_blank"><span class="award-highlight">UW College of Engineering Dean's Fellowship</span></a>
-        </div>
-      </li>
-      <li class="award-item">
-        <div class="award-date">Aug 2025</div>
-        <div class="award-content">
-          <span class="award-percentage">(≤1%)</span><a href="https://2025.aclweb.org/program/awards/" target="_blank"><span class="award-highlight">Best Paper Honourable Mention Award</span></a>, ACL 2025
-        </div>
-      </li>
-      <li class="award-item">
-        <div class="award-date">Jun 2022</div>
-        <div class="award-content">
-          <span class="award-percentage">(≤10%)</span><span class="award-highlight">Outstanding Student Scholarship First Prize</span> of Sun Yat-sen University
-        </div>
-      </li>
-      <li class="award-item">
-        <div class="award-date">Jun 2021</div>
-        <div class="award-content">
-          <span class="award-percentage">(≤5%)</span><span class="award-highlight">Excellent Inspirational Scholarship</span> of Sun Yat-sen University
-        </div>
-      </li>
-    </ul>
+      </ul>
+    </details>
   </section>
 
   <!-- Talks -->
@@ -1638,6 +1469,182 @@
       </a>
     </div>
     </div>
+  </section>
+
+  <!-- Featured Publications -->
+  <section class="section" id="featured">
+    <h2 class="section-title">Selected Publications</h2>
+    <p class="featured-note">* denotes equal contribution</p>
+    
+    <ul class="featured-pubs-list">
+      <!-- ThinkMorph -->
+      <li class="featured-pub">
+        <div class="pub-image-wrapper">
+          <img src="assets/thinkmorph.jpg" alt="ThinkMorph" class="pub-image top-align" loading="lazy">
+          <span class="pub-badge spotlight"> 🔥 Newest</span>
+        </div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2510.27492" target="_blank">ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu*</strong>, Yunzhuo Hao*, Huichen Will Wang*, Linjie Li*, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
+          </div>
+          <!-- <div class="pub-venue">International Conference on Learning Representations (ICLR), 2025 — Spotlight Presentation</div> -->
+          <details class="pub-tldr">
+            <summary>TL;DR</summary>
+            <div class="pub-description">
+            ThinkMorph enables true multimodal chain-of-thought reasoning where text and vision complement each other, achieving emergent intelligence and strong generalization with just 24K training samples.
+          </div>
+          </details>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2510.27492" target="_blank" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="https://thinkmorph.github.io/" target="_blank" class="pub-link secondary">
+              <i class="fas fa-home"></i> Homepage
+            </a>
+            <a href="https://github.com/ThinkMorph/ThinkMorph" target="_blank" class="pub-link secondary">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- EMMA -->
+      <li class="featured-pub">
+        <div class="pub-image-wrapper">
+          <img src="assets/emma.png" alt="EMMA" class="pub-image top-align" loading="lazy">
+          <span class="pub-badge oral">ICML 2025 Oral</span>
+        </div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <a href="https://www.arxiv.org/abs/2501.05444" target="_blank">Can MLLMs Reason in Multimodality? EMMA: An Enhanced MultiModal ReAsoning Benchmark</a>
+          </div>
+          <div class="pub-authors">
+            Yunzhuo Hao*, <strong>Jiawei Gu*</strong>, Huichen Will Wang*, Linjie Li*, Zhengyuan Yang, Lijuan Wang, Yu Cheng
+          </div>
+          <!-- <div class="pub-venue">International Conference on Machine Learning (ICML), 2025 — Oral Presentation (Top 0.9%)</div> -->
+          <details class="pub-tldr">
+            <summary>TL;DR</summary>
+            <div class="pub-description">
+            We contribute EMMA (Enhanced MultiModal reAsoning), a benchmark targeting organic multimodal reasoning across mathematics, physics, chemistry, and coding. SOTA models struggle big time.
+          </div>
+          </details>
+          <div class="pub-links">
+            <a href="https://www.arxiv.org/pdf/2501.05444" target="_blank" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="https://emma-benchmark.github.io/" target="_blank" class="pub-link secondary">
+              <i class="fas fa-home"></i> Homepage
+            </a>
+            <a href="https://github.com/EMMA-Bench/EMMA" target="_blank" class="pub-link secondary">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- SRM -->
+      <li class="featured-pub">
+        <div class="pub-image-wrapper">
+          <img src="assets/srm_award.jpg" alt="SRM" class="pub-image srm-align" loading="lazy">
+          <span class="pub-badge oral">ACL 2025 Oral + 🏆 Best Paper Honorable Mention </span>
+        </div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2506.00396" target="_blank">Speculative Reward Model Boosts Decision Making Ability of LLMs Cost-Effectively</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, Shangsong Liang
+          </div>
+          <!-- <div class="pub-venue">Annual Meeting of the Association for Computational Linguistics (ACL), 2025 — Oral Presentation</div> -->
+          <details class="pub-tldr">
+            <summary>TL;DR</summary>
+            <div class="pub-description">
+            We propose Speculative Reward Models that dramatically improve LLM decision-making efficiency while maintaining high accuracy.
+          </div>
+          </details>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2506.00396" target="_blank" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="https://github.com/Kuvvius/Speculative-RM" target="_blank" class="pub-link secondary">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- CMR Scaling Law -->
+      <li class="featured-pub">
+        <div class="pub-image-wrapper">
+          <img src="assets/cmr_method.png" alt="CMR Scaling Law" class="pub-image top-align" loading="lazy">
+          <span class="pub-badge oral">EMNLP 2024</span>
+        </div>
+        <div class="pub-content">
+          <div class="pub-title">
+            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank">CMR Scaling Law: Predicting Critical Mixture Ratios for Continual Pre-training of Language Models</a>
+          </div>
+          <div class="pub-authors">
+            <strong>Jiawei Gu</strong>, Zacc Yang, Chuanghao Ding, Rui Zhao, Fei Tan
+          </div>
+          <!-- <div class="pub-venue">EMNLP 2024</div> -->
+          <details class="pub-tldr">
+            <summary>TL;DR</summary>
+            <div class="pub-description">
+            We propose CMR Scaling Law to predict critical mixture ratios for continual pre-training, enabling efficient domain adaptation while preventing catastrophic forgetting.
+          </div>
+          </details>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2024.emnlp-main.903/" target="_blank" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="https://docs.google.com/presentation/d/1O1PSqvXQAtykU5w2hUVnANbk1UdwkahSPOCiomXBEc0/edit?pli=1&slide=id.p1#slide=id.p1" target="_blank" class="pub-link secondary">
+              <i class="fas fa-person-chalkboard"></i> Slides
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Awards -->
+  <section class="section" id="awards">
+    <h2 class="section-title">Awards</h2>
+    
+    <ul class="awards-list">
+      <li class="award-item">
+        <div class="award-date">May 2026</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤1%)</span><span class="award-highlight">Gold Reviewer Award</span>, ICML 2026
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Mar 2026</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤1%)</span><a href="https://www.engr.washington.edu/current/deans_scholarships" target="_blank"><span class="award-highlight">UW College of Engineering Dean's Fellowship</span></a>
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Aug 2025</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤1%)</span><a href="https://2025.aclweb.org/program/awards/" target="_blank"><span class="award-highlight">Best Paper Honourable Mention Award</span></a>, ACL 2025
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Jun 2022</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤10%)</span><span class="award-highlight">Outstanding Student Scholarship First Prize</span> of Sun Yat-sen University
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-date">Jun 2021</div>
+        <div class="award-content">
+          <span class="award-percentage">(≤5%)</span><span class="award-highlight">Excellent Inspirational Scholarship</span> of Sun Yat-sen University
+        </div>
+      </li>
+    </ul>
   </section>
 
   <!-- All Publications -->
@@ -1905,15 +1912,6 @@
 </footer>
 
 <script>
-  // Beyond Research Toggle Functionality
-  function toggleBeyondResearch() {
-    const list = document.getElementById('beyond-research-list');
-    const toggle = document.getElementById('beyond-research-toggle');
-    
-    list.classList.toggle('expanded');
-    toggle.classList.toggle('expanded');
-  }
-
   // Talks Carousel Functionality
   const talksGrid = document.getElementById('talks-grid');
   const talksPrevBtn = document.getElementById('talks-prev');
