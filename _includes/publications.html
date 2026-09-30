@@ -1,0 +1,25 @@
+{% assign selected = site.data.publications | where_exp: "p", "p.selected" | sort: "selected" %}
+<section class="section" id="publications">
+  <h2 class="label">Selected Publications</h2>
+  <p class="pub-note">* denotes equal contribution</p>
+  <div class="featured">
+    {% for pub in selected %}
+    <article class="feature-card">
+      <div class="feature-media">
+        <img src="{{ pub.feature_image | default: pub.image | relative_url }}" alt="{{ pub.title | split: ':' | first }}" loading="lazy">
+        {% if pub.label %}<span class="feature-label">{{ pub.label }}</span>{% endif %}
+      </div>
+      <div class="feature-body">
+        <div class="pub-title"><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></div>
+        <div class="pub-authors">{{ pub.authors | replace: 'Jiawei Gu*', '<b>Jiawei Gu*</b>' | replace: 'Jiawei Gu,', '<b>Jiawei Gu</b>,' }}</div>
+        {% if pub.tldr %}
+        <details class="tldr"><summary>TL;DR</summary><p>{{ pub.tldr }}</p></details>
+        {% endif %}
+        <div class="pub-meta">
+          {% for l in pub.links %}{% assign key = l[0] %}<a class="pub-link" href="{{ l[1] }}" target="_blank" rel="noopener">[{{ site.data.link_labels[key] | default: key }}]</a>{% endfor %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,4 @@
+<article class="pub pub-compact">
+  <img class="pub-thumb" src="{{ include.pub.image | relative_url }}" alt="{{ include.pub.title | split: ':' | first }}" loading="lazy">
+  <div>{% include pub-body.html pub=include.pub %}</div>
+</article>

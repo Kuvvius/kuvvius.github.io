@@ -1,0 +1,385 @@
+/* Jiawei Gu homepage. Tokens follow docs/superpowers/specs/2026-09-29-homepage-redesign-design.md */
+
+@font-face {
+  font-family: "ChillKai Name";
+  src: url("../fonts/chillkai-name.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --bg: #faf8f3;
+  --ink: #1f1d1a;
+  --mute: #6b645a;
+  --line: #e3ddd0;
+  --line-2: #ece6da;
+  --purple: #4b2e83;
+  --gold: #c2a15a;          /* badges, hover accents */
+  --gold-light: #e6d3a3;    /* link underline, hover fill */
+  --gold-text: #a8842f;     /* slogan */
+  --card-bg: #fff;          /* publication and talk cards */
+  --tint: #fff;             /* card body tint */
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 16.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: var(--purple); text-decoration: none; }
+
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 56px 40px;
+}
+
+/* ---- prose links: purple text, light-gold underline, gold fill on hover ---- */
+.prose a {
+  color: var(--purple);
+  border-bottom: 2px solid var(--gold-light);
+  transition: background-color .15s;
+}
+.prose a:hover { background: var(--gold-light); }
+
+/* ---- header ---- */
+.hero {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 44px;
+  align-items: start;
+  padding-bottom: 24px;
+}
+
+.hero-photo {
+  width: 200px;
+  height: 261px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hero-name {
+  margin: 6px 0 2px;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+}
+
+.hero-zh {
+  font-family: "ChillKai Name", "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-size: 0.55em;
+  font-weight: 400;
+  color: var(--mute);
+  letter-spacing: 0;
+  margin-left: 4px;
+}
+
+.hero-role { margin-top: 4px; font-size: 19px; color: var(--ink); }
+.hero-role a { color: var(--purple); font-weight: 600; }
+.hero-role a:hover { border-bottom: 2px solid var(--gold-light); }
+
+.hero-motto {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--gold-text);
+}
+
+.hero-links { display: flex; align-items: center; gap: 24px; margin-top: 16px; }
+.hero-links a {
+  color: var(--purple);
+  font-size: 29px;
+  line-height: 1;
+  padding: 2px;
+  transition: color .15s, transform .15s;
+}
+.hero-links a:hover { color: var(--gold); transform: translateY(-1px); }
+
+.hero-bio { margin: 18px 0 0; font-size: 19.5px; line-height: 1.7; }
+
+/* ---- sections ---- */
+.section { margin-top: 56px; }
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.label::before {
+  content: "";
+  flex: 0 0 4px;
+  align-self: stretch;
+  border-radius: 2px;
+  background: var(--purple);
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.row-date {
+  padding-top: 1px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--mute);
+}
+
+.note { color: var(--mute); font-size: 13.5px; }
+
+.more > summary {
+  padding: 6px 0 2px 92px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--purple);
+}
+.more > summary::after { content: " \203A"; }
+.more[open] > summary { display: none; }
+
+/* ---- publications ---- */
+.pub {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+/* Selected publications: two-column cards, big image, overlay label */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 18px;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  transition: border-color .2s, transform .2s;
+}
+.feature-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.feature-media { position: relative; background: var(--line-2); }
+.feature-media img { width: 100%; height: 200px; object-fit: cover; object-position: top; }
+.feature-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  max-width: calc(100% - 32px);
+  padding: 7px 18px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.feature-body {
+  background: var(--tint);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  padding: 20px 24px 22px;
+}
+.feature-body .pub-title { font-size: 19px; font-weight: 600; line-height: 1.35; }
+.feature-body .pub-title a { color: var(--ink); }
+.feature-body .pub-title a:hover { color: var(--purple); }
+.feature-body .pub-authors { font-size: 15.5px; line-height: 1.55; }
+.feature-body .tldr p { font-size: 15.5px; font-style: italic; line-height: 1.55; color: var(--mute); }
+.feature-body .pub-meta { margin-top: auto; padding-top: 12px; }
+
+.pub-note { margin: -12px 0 6px; font-size: 14px; font-style: italic; color: var(--mute); }
+
+/* All Publications: the heading itself toggles the list */
+.all-pubs > summary.label { cursor: pointer; margin-bottom: 0; }
+.all-pubs[open] > summary.label { margin-bottom: 18px; }
+.all-pubs > summary.label::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-left: 2px;
+  border-right: 2px solid var(--mute);
+  border-bottom: 2px solid var(--mute);
+  transform: rotate(-45deg);
+  transition: transform .2s;
+}
+.all-pubs[open] > summary.label::after { transform: rotate(45deg) translate(-2px, -2px); }
+.all-pubs > summary.label:hover::after { border-color: var(--purple); }
+
+.pub-compact { grid-template-columns: 190px 1fr; gap: 24px; padding: 14px 0; }
+.pub-compact .pub-thumb { width: 190px; height: 118px; }
+.pub-compact .pub-title { font-size: 16px; }
+
+.pub-thumb {
+  width: 150px;
+  height: 92px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.pub-title { font-size: 16.5px; font-weight: 500; line-height: 1.35; }
+.pub-title a { color: var(--ink); }
+.pub-title a:hover { color: var(--purple); }
+
+.pub-authors { margin-top: 3px; font-size: 14.5px; color: var(--mute); }
+.pub-authors b { color: var(--purple); font-weight: 700; font-size: 1.08em; }
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  margin-top: 7px;
+  font-family: var(--sans);
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+.pub-link {
+  font-family: var(--serif);
+  font-size: 15.5px;
+  color: var(--purple);
+}
+.pub-link:first-of-type { margin-left: 6px; }
+.pub-link:hover { color: var(--ink); }
+
+.tldr > summary { margin-top: 5px; font-family: var(--sans); font-size: 11px; color: var(--mute); }
+.tldr > summary::before { content: "+ "; }
+.tldr[open] > summary::before { content: "\2212  "; }
+.tldr p { margin: 4px 0 0; font-size: 15px; color: #3d3a35; }
+
+/* ---- talks carousel (behaviour from the previous site, restyled) ---- */
+.talks { position: relative; }
+
+.talks-grid {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 8px 0 12px;
+}
+.talks-grid::-webkit-scrollbar { display: none; }
+.talks-grid::before,
+.talks-grid::after { content: ""; flex: 0 0 calc((100% - 460px) / 2); }
+
+.talk-card {
+  flex: 0 0 460px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: inherit;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  opacity: .55;
+  transition: opacity .4s, border-color .4s, transform .4s;
+}
+.talk-card.active { opacity: 1; border-color: var(--gold); }
+.talk-card:hover { transform: translateY(-3px); }
+
+.talk-image { width: 100%; height: 250px; object-fit: cover; background: var(--line-2); }
+
+.talk-body { padding: 18px 22px 22px; background: var(--tint); }
+.talk-venue { font-size: 15px; font-weight: 600; color: var(--purple); }
+.talk-title { margin-top: 6px; font-size: 18.5px; font-weight: 600; line-height: 1.35; color: var(--ink); }
+.talk-desc { margin-top: 6px; font-size: 15.5px; font-style: italic; line-height: 1.55; color: var(--mute); }
+
+.talks-nav {
+  position: absolute;
+  top: 125px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .92);
+  color: var(--purple);
+  font-size: 14px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background .15s, color .15s;
+}
+.talks-nav:hover { background: var(--purple); color: #fff; }
+.talks-nav.prev { left: -8px; }
+.talks-nav.next { right: -8px; }
+
+/* ---- footer ---- */
+.footer {
+  margin-top: 48px;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: #9a9387;
+}
+
+/* ---- phones ---- */
+@media (max-width: 720px) {
+  .page { padding: 32px 16px 32px; }
+  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero-photo { width: 100%; max-width: 260px; height: auto; aspect-ratio: 600 / 784; margin: 0 auto; }
+  .hero-name { font-size: 36px; }
+  .row { grid-template-columns: 1fr; gap: 0; }
+  .more > summary { padding-left: 0; }
+  .pub { grid-template-columns: 1fr; gap: 10px; }
+  .featured { grid-template-columns: 1fr; }
+  .feature-media img { height: 170px; }
+  .pub-thumb { width: 100%; height: 160px; }
+  .pub-compact { grid-template-columns: 1fr; }
+  .pub-compact .pub-thumb { width: 100%; height: 170px; }
+  .talks-grid::before,
+  .talks-grid::after { flex-basis: 0; }
+  .talk-card { flex-basis: 85%; }
+  .talk-image { height: 180px; }
+  .talks-nav { display: none; }
+}

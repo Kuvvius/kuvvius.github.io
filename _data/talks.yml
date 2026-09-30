@@ -1,0 +1,25 @@
+- venue: ACL 2025
+  title: Boosting Decision-Making Ability of LLMs with Speculative Reward Model Cost-Effectively
+  description: Oral presentation on improving LLM decision-making efficiency through speculative reward modeling techniques.
+  image: /assets/talks/srm_talk.png
+  url: https://docs.google.com/presentation/d/1R079wHrpwQR06vRbW-SlCptUBgx5LqXO/edit?slide=id.p1#slide=id.p1
+- venue: Qingyuan Academic Annual Meeting, 2026
+  title: 'AI Frontier: Toward World Models'
+  description: Featured presentation at the Qingyuan Club 2026 Academic Annual Meeting on multimodal reasoning, evaluation, and the path toward world models.
+  image: /assets/talks/qingyuan_talk_2026.png
+  url: /assets/talks/qingyuan_talk_2026.png
+- venue: Beijing Academy of Artificial Intelligence (BAAI), 2025
+  title: Can MLLMs Reason/Think in Multimodality?
+  description: Invited talk on evaluating multimodal reasoning capabilities of large language models through our EMMA benchmark.
+  image: /assets/talks/baai_emma.jpg
+  url: https://event.baai.ac.cn/activities/928
+- venue: Beijing Academy of Artificial Intelligence (BAAI), 2025
+  title: 'A Survey on LLM-as-a-Judge: Evaluation, Reliability, and Future Directions'
+  description: Invited talk on the comprehensive survey of using large language models as judges for various evaluation tasks.
+  image: /assets/talks/judge_talk.jpg
+  url: https://event.baai.ac.cn/activities/878
+- venue: International Conference on Machine Learning (ICML), 2025
+  title: Can MLLMs Reason in Multimodality? EMMA Benchmark
+  description: Oral presentation on our EMMA benchmark for evaluating multimodal reasoning in large language models.
+  image: /assets/talks/icml_emma.png
+  url: https://icml.cc/media/icml-2025/Slides/43702_JWS4hmd.pdf

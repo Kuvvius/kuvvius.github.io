@@ -1,0 +1,17 @@
+{% assign shown = 5 %}
+<section class="section" id="news">
+  <h2 class="label">News</h2>
+  <div class="prose">
+    {% for n in site.data.news limit: shown %}
+    <div class="row"><span class="row-date">{{ n.date }}</span><span>{{ n.text }}</span></div>
+    {% endfor %}
+    {% if site.data.news.size > shown %}
+    <details class="more">
+      <summary>More news</summary>
+      {% for n in site.data.news offset: shown %}
+      <div class="row"><span class="row-date">{{ n.date }}</span><span>{{ n.text }}</span></div>
+      {% endfor %}
+    </details>
+    {% endif %}
+  </div>
+</section>

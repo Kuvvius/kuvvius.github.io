@@ -1,0 +1,8 @@
+<section class="section" id="service">
+  <h2 class="label">Service</h2>
+  <div class="prose">
+    {% for s in site.data.service %}
+    <div class="row"><span class="row-date">{{ s.role }}</span><span>{{ s.text }}</span></div>
+    {% endfor %}
+  </div>
+</section>

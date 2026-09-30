@@ -1,4 +1,4 @@
 source "https://rubygems.org"
-gemspec
-gem "jekyll-remote-theme"
-gem "sassc" 
+
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"

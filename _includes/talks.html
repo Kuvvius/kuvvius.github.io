@@ -1,0 +1,19 @@
+<section class="section" id="talks">
+  <h2 class="label">Talks</h2>
+  <div class="talks">
+    <button class="talks-nav prev" id="talks-prev" aria-label="Previous talk"><i class="fas fa-chevron-left"></i></button>
+    <button class="talks-nav next" id="talks-next" aria-label="Next talk"><i class="fas fa-chevron-right"></i></button>
+    <div class="talks-grid" id="talks-grid">
+      {% for t in site.data.talks %}
+      <a class="talk-card" href="{{ t.url | relative_url }}" target="_blank" rel="noopener">
+        <img class="talk-image" src="{{ t.image | relative_url }}" alt="{{ t.title }}" loading="lazy">
+        <div class="talk-body">
+          <div class="talk-venue">{{ t.venue }}</div>
+          <div class="talk-title">{{ t.title }}</div>
+          <div class="talk-desc">{{ t.description }}</div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

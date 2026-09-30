@@ -1,0 +1,8 @@
+<section class="section" id="awards">
+  <h2 class="label">Awards</h2>
+  <div class="prose">
+    {% for a in site.data.awards %}
+    <div class="row"><span class="row-date">{{ a.date }}</span><span>{{ a.text }}{% if a.note %} <span class="note">({{ a.note }})</span>{% endif %}</span></div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,8 @@
+<section class="section" id="all-publications">
+  <details class="all-pubs">
+    <summary class="label">All Publications</summary>
+    {% for pub in site.data.publications %}
+    {% include pub-row.html pub=pub %}
+    {% endfor %}
+  </details>
+</section>

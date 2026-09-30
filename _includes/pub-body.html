@@ -1,0 +1,7 @@
+{% assign pub = include.pub %}
+<div class="pub-title"><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></div>
+<div class="pub-authors">{{ pub.authors | replace: 'Jiawei Gu*', '<b>Jiawei Gu*</b>' | replace: 'Jiawei Gu,', '<b>Jiawei Gu</b>,' }}</div>
+<div class="pub-meta">
+  {% for b in pub.badges %}<span class="badge">{{ b }}</span>{% endfor %}
+  {% for l in pub.links %}{% assign key = l[0] %}<a class="pub-link" href="{{ l[1] }}" target="_blank" rel="noopener">[{{ site.data.link_labels[key] | default: key }}]</a>{% endfor %}
+</div>

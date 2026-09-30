@@ -1,0 +1,15 @@
+{% assign p = site.data.profile %}
+<header class="hero">
+  <img class="hero-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+  <div class="hero-text">
+    <h1 class="hero-name">{{ p.name }} <span class="hero-zh" lang="zh-CN">（{{ p.name_zh }}）</span></h1>
+    <div class="hero-role">{{ p.role }}</div>
+    {% if p.motto %}<div><span class="hero-motto">&ldquo;{{ p.motto }}&rdquo;</span></div>{% endif %}
+    <nav class="hero-links">
+      {% for l in p.links %}
+      <a href="{{ l.url }}" title="{{ l.label }}" aria-label="{{ l.label }}"{% unless l.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}><i class="{{ l.icon }}"></i></a>
+      {% endfor %}
+    </nav>
+    <p class="hero-bio prose">{{ p.bio }}</p>
+  </div>
+</header>
