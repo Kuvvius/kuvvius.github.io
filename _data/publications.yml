@@ -1,3 +1,20 @@
+- title: 'HumanCLAW: Can Vision-Language Models Act Through a Body?'
+  url: https://arxiv.org/abs/2607.27180
+  authors: Li Siyao*, Jiawei Gu*, Shuai Liu, Kairui Hu, Zekun Li, Linjie Li, Chengcheng Tang, Po-Chen Wu, Ivan Shugurov, Lingni Ma, Michael Zollhoefer, Sizhe An, Abhay Mittal, Amy Zhao, Ranjay Krishna, Manling Li, Ziwei Liu, Chuan Guo
+  authors_tail: 4
+  badges:
+  - Preprint
+  image: /assets/humanclaw_teaser.jpg
+  selected: 1
+  feature_image: /assets/humanclaw_teaser.jpg
+  feature_position: center 27%
+  label: 🔥 Newest
+  tldr: An evaluation framework where an off-the-shelf VLM drives a full 3D human body by issuing atomic skill commands, so its decisions are tested with real physical consequences.
+  links:
+    pdf: https://arxiv.org/pdf/2607.27180
+    project: https://human-claw.github.io/
+    code: https://github.com/Human-CLAW/HumanCLAW
+    talk: /talks/humanclaw/
 - title: 'ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning'
   url: https://arxiv.org/abs/2510.27492
   authors: Jiawei Gu*, Yunzhuo Hao*, Huichen Will Wang*, Linjie Li*, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
@@ -116,23 +133,6 @@
   links:
     pdf: https://arxiv.org/pdf/2505.14810
     code: https://github.com/TingchenFu/MathIF
-- title: 'HumanCLAW: Can Vision-Language Models Act Through a Body?'
-  url: https://arxiv.org/abs/2607.27180
-  authors: Li Siyao*, Jiawei Gu*, Shuai Liu, Kairui Hu, Zekun Li, Linjie Li, Chengcheng Tang, Po-Chen Wu, Ivan Shugurov, Lingni Ma, Michael Zollhoefer, Sizhe An, Abhay Mittal, Amy Zhao, Ranjay Krishna, Manling Li, Ziwei Liu, Chuan Guo
-  authors_tail: 4
-  badges:
-  - Preprint
-  image: /assets/humanclaw_teaser.jpg
-  selected: 1
-  feature_image: /assets/humanclaw_teaser.jpg
-  feature_position: center 27%
-  label: 🔥 Newest
-  tldr: An evaluation framework where an off-the-shelf VLM drives a full 3D human body by issuing atomic skill commands, so its decisions are tested with real physical consequences.
-  links:
-    pdf: https://arxiv.org/pdf/2607.27180
-    project: https://human-claw.github.io/
-    code: https://github.com/Human-CLAW/HumanCLAW
-    talk: /talks/humanclaw/
 - title: 'Gym-V: A Unified Vision Environment System for Agentic Vision Research'
   url: https://arxiv.org/abs/2603.15432
   authors: Fanqing Meng*, Lingxiao Du*, Jiawei Gu*, Jiaqi Liao, Linjie Li, Zijian Wu, Xiangyan Liu, Ziqi Zhao, Mengkang Hu, Zichen Liu, Jiaheng Zhang, Michael Qizhe Shieh

@@ -2,6 +2,6 @@
 <div class="pub-title"><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></div>
 <div class="pub-authors">{% include hl-name.html text=pub.authors %}</div>
 <div class="pub-meta">
-  {% for b in pub.badges %}<span class="badge">{{ b }}</span>{% endfor %}
+  {% for b in pub.badges %}{% if b contains 'Best Paper' %}<span class="venue-hl">🏆 {{ b }}</span>{% elsif b contains 'Oral' %}<span class="venue-hl">{{ b }}</span>{% else %}<span class="venue">{{ b }}</span>{% endif %}{% endfor %}
   {% for l in pub.links %}{% assign key = l[0] %}<a class="pub-link" href="{{ l[1] }}" target="_blank" rel="noopener">[{{ site.data.link_labels[key] | default: key }}]</a>{% endfor %}
 </div>

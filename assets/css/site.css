@@ -294,21 +294,15 @@ details > summary::-webkit-details-marker { display: none; }
 .pub-meta {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   gap: 6px 12px;
   margin-top: 7px;
   font-family: var(--sans);
 }
 
-.badge {
-  padding: 2px 8px;
-  border-radius: 4px;
-  background: var(--gold);
-  color: #fff;
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: .2px;
-}
+/* Venue as italic gold text; Oral and awards in red (no boxes) */
+.venue { font-family: var(--serif); font-size: 15.5px; font-style: italic; color: var(--gold-text); }
+.venue-hl { font-family: var(--serif); font-size: 15.5px; font-weight: 600; color: #b3261e; }
 
 .pub-link {
   font-family: var(--serif);
