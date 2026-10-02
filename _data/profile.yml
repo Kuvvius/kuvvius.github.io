@@ -12,7 +12,7 @@ bio:   # one entry per paragraph
   - >-
     My research began with scaling language models as a foundation for intelligence.
     I now build on this by unifying modalities to teach models to think in words and images, and act in the world.
-    My focus is scaling native multimodal reasoning, including understanding, world modeling, and embodied reasoning.
+    My focus is <strong>scaling native multimodal reasoning</strong>, including understanding, world modeling, and embodied reasoning.
 links:
   - { icon: "fas fa-envelope", label: Email, url: "mailto:Kuvvius@gmail.com" }
   - { icon: "ai ai-google-scholar", label: Google Scholar, url: "https://scholar.google.com/citations?user=7p8yEHAAAAAJ&hl=En" }
