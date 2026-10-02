@@ -1,0 +1,18 @@
+{%- comment -%}
+Long author lists: first 4 (extended to include Jiawei Gu), a clickable "… +N", then the last `tail` (default 2).
+Pass full=true to always show everyone.
+{%- endcomment -%}
+{%- assign names = include.authors | split: ', ' -%}
+{%- assign n = names.size -%}
+{%- assign head_n = 4 -%}
+{%- for a in names -%}{%- if a contains 'Jiawei Gu' and forloop.index > head_n -%}{%- assign head_n = forloop.index -%}{%- endif -%}{%- endfor -%}
+{%- assign tail_n = include.tail | default: 2 -%}
+{%- assign tail_start = n | minus: tail_n -%}
+{%- if include.full or n <= 7 or head_n >= tail_start -%}
+<div class="pub-authors">{% include hl-name.html text=include.authors %}</div>
+{%- else -%}
+{%- assign hidden = tail_start | minus: head_n -%}
+{%- assign head = names | slice: 0, head_n | join: ', ' -%}
+{%- assign tail = names | slice: tail_start, tail_n | join: ', ' -%}
+<div class="pub-authors"><span class="au-short">{% include hl-name.html text=head %}, <button type="button" class="au-more" onclick="this.closest('.pub-authors').classList.add('open')" aria-label="Show all {{ n }} authors">… +{{ hidden }}</button>, {% include hl-name.html text=tail %}</span><span class="au-full">{% include hl-name.html text=include.authors %}</span></div>
+{%- endif -%}

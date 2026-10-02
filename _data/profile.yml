@@ -3,12 +3,16 @@ name_zh: 顾嘉炜
 role: Ph.D. Student, <a href="https://www.cs.washington.edu/" target="_blank">University of Washington</a>
 motto: Think beyond boundaries
 photo: /assets/images/avatar-portrait.jpg
-bio: >-
-  Hi, I am Jiawei Gu, a PhD student in Computer Science at the University of Washington, advised by
-  <a href="https://www.ranjaykrishna.com/" target="_blank">Ranjay Krishna</a>.
-  I also work closely with <a href="https://yejinc.github.io/" target="_blank">Yejin Choi</a> and
-  <a href="https://limanling.github.io/" target="_blank">Manling Li</a>.
-  I study multimodal reasoning: building models that think <em>in</em> modalities, not just <em>with</em> them.
+bio:   # one entry per paragraph
+  - >-
+    Hi, I am Jiawei Gu, a PhD student in Computer Science at the University of Washington, advised by
+    <a href="https://www.ranjaykrishna.com/" target="_blank">Ranjay Krishna</a>.
+    I also work closely with <a href="https://yejinc.github.io/" target="_blank">Yejin Choi</a> and
+    <a href="https://limanling.github.io/" target="_blank">Manling Li</a>.
+  - >-
+    My research began with scaling language models as a foundation for intelligence.
+    I now build on this by unifying modalities to teach models to think in words and images, and act in the world.
+    My focus is scaling native multimodal reasoning, including multimodal understanding, world modeling, and embodied reasoning.
 links:
   - { icon: "fas fa-envelope", label: Email, url: "mailto:Kuvvius@gmail.com" }
   - { icon: "ai ai-google-scholar", label: Google Scholar, url: "https://scholar.google.com/citations?user=7p8yEHAAAAAJ&hl=En" }

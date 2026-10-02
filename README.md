@@ -8,7 +8,7 @@ All content lives in `_data/`. Edit the YAML and push; no HTML changes needed.
 
 | File | What it holds |
 |---|---|
-| `profile.yml` | name, role, motto, photo, bio, social links |
+| `profile.yml` | name, role, motto, photo, bio (one list item per paragraph), social links |
 | `news.yml` | news items, newest first (the first 5 show, the rest fold under "More news") |
 | `publications.yml` | all papers in display order; `selected: 1-4` puts a paper in Selected Publications |
 | `talks.yml` | talk cards in the carousel |

@@ -1,12 +1,13 @@
 - title: 'ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning'
   url: https://arxiv.org/abs/2510.27492
   authors: Jiawei Gu*, Yunzhuo Hao*, Huichen Will Wang*, Linjie Li*, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
+  authors_full: true
   badges:
   - ICLR 2026
   image: /assets/interleaved_design.png
-  selected: 1
+  selected: 2
   feature_image: /assets/thinkmorph.jpg
-  label: 🔥 Newest
+  label: ICLR 2026
   tldr: ThinkMorph enables true multimodal chain-of-thought reasoning where text and vision complement each other, achieving emergent intelligence and strong generalization with just 24K training samples.
   links:
     pdf: https://arxiv.org/pdf/2510.27492
@@ -19,7 +20,7 @@
   - ICML 2025
   - Oral
   image: /assets/emma_motivation.png
-  selected: 2
+  selected: 3
   feature_image: /assets/emma.png
   label: ICML 2025 Oral
   tldr: We contribute EMMA (Enhanced MultiModal reAsoning), a benchmark targeting organic multimodal reasoning across mathematics, physics, chemistry, and coding. SOTA models struggle big time.
@@ -36,7 +37,7 @@
   - Oral
   - Best Paper HM
   image: /assets/srm_method.png
-  selected: 3
+  selected: 4
   feature_image: /assets/srm_award.jpg
   label: ACL 2025 Oral + 🏆 Best Paper Honorable Mention
   tldr: We propose Speculative Reward Models that dramatically improve LLM decision-making efficiency while maintaining high accuracy.
@@ -50,7 +51,7 @@
   badges:
   - EMNLP 2024
   image: /assets/cmr_method.png
-  selected: 4
+  selected: 6
   feature_image: /assets/cmr_method.png
   label: EMNLP 2024
   tldr: We propose CMR Scaling Law to predict critical mixture ratios for continual pre-training, enabling efficient domain adaptation while preventing catastrophic forgetting.
@@ -72,6 +73,9 @@
   badges:
   - The Innovation
   image: /assets/how_to_judge.png
+  selected: 5
+  feature_image: /assets/how_to_judge_feature.jpg
+  tldr: 'A comprehensive survey of using LLMs as evaluators: how to build reliable LLM judges, how to evaluate them, and where they are applied.'
   links:
     pdf: https://arxiv.org/pdf/2411.15594
     project: https://awesome-llm-as-a-judge.github.io/
@@ -112,6 +116,23 @@
   links:
     pdf: https://arxiv.org/pdf/2505.14810
     code: https://github.com/TingchenFu/MathIF
+- title: 'HumanCLAW: Can Vision-Language Models Act Through a Body?'
+  url: https://arxiv.org/abs/2607.27180
+  authors: Li Siyao*, Jiawei Gu*, Shuai Liu, Kairui Hu, Zekun Li, Linjie Li, Chengcheng Tang, Po-Chen Wu, Ivan Shugurov, Lingni Ma, Michael Zollhoefer, Sizhe An, Abhay Mittal, Amy Zhao, Ranjay Krishna, Manling Li, Ziwei Liu, Chuan Guo
+  authors_tail: 4
+  badges:
+  - Preprint
+  image: /assets/humanclaw_teaser.jpg
+  selected: 1
+  feature_image: /assets/humanclaw_teaser.jpg
+  feature_position: center 27%
+  label: 🔥 Newest
+  tldr: An evaluation framework where an off-the-shelf VLM drives a full 3D human body by issuing atomic skill commands, so its decisions are tested with real physical consequences.
+  links:
+    pdf: https://arxiv.org/pdf/2607.27180
+    project: https://human-claw.github.io/
+    code: https://github.com/Human-CLAW/HumanCLAW
+    talk: /talks/humanclaw/
 - title: 'Gym-V: A Unified Vision Environment System for Agentic Vision Research'
   url: https://arxiv.org/abs/2603.15432
   authors: Fanqing Meng*, Lingxiao Du*, Jiawei Gu*, Jiaqi Liao, Linjie Li, Zijian Wu, Xiangyan Liu, Ziqi Zhao, Mengkang Hu, Zichen Liu, Jiaheng Zhang, Michael Qizhe Shieh

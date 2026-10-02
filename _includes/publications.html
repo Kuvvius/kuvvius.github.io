@@ -6,12 +6,12 @@
     {% for pub in selected %}
     <article class="feature-card">
       <div class="feature-media">
-        <img src="{{ pub.feature_image | default: pub.image | relative_url }}" alt="{{ pub.title | split: ':' | first }}" loading="lazy">
+        <img src="{{ pub.feature_image | default: pub.image | relative_url }}" alt="{{ pub.title | split: ':' | first }}" loading="lazy"{% if pub.feature_position %} style="object-position: {{ pub.feature_position }}"{% endif %}>
         {% if pub.label %}<span class="feature-label">{{ pub.label }}</span>{% endif %}
       </div>
       <div class="feature-body">
         <div class="pub-title"><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></div>
-        <div class="pub-authors">{{ pub.authors | replace: 'Jiawei Gu*', '<b>Jiawei Gu*</b>' | replace: 'Jiawei Gu,', '<b>Jiawei Gu</b>,' }}</div>
+        {% include authors-short.html authors=pub.authors tail=pub.authors_tail full=pub.authors_full %}
         {% if pub.tldr %}
         <details class="tldr"><summary>TL;DR</summary><p>{{ pub.tldr }}</p></details>
         {% endif %}
