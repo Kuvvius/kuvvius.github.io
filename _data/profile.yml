@@ -7,8 +7,7 @@ bio:   # one entry per paragraph
   - >-
     Hi, I am Jiawei Gu, a PhD student in Computer Science at the University of Washington, advised by
     <a href="https://www.ranjaykrishna.com/" target="_blank">Ranjay Krishna</a>.
-    I also work closely with <a href="https://yejinc.github.io/" target="_blank">Yejin Choi</a> and
-    <a href="https://limanling.github.io/" target="_blank">Manling Li</a>.
+    I also work closely with <a href="https://limanling.github.io/" target="_blank">Manling Li</a>.
   - >-
     My research began with scaling language models as a foundation for intelligence.
     I now build on this by unifying modalities to teach models to think in words and images, and act in the world.
