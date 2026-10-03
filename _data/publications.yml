@@ -14,7 +14,6 @@
     pdf: https://arxiv.org/pdf/2607.27180
     project: https://human-claw.github.io/
     code: https://github.com/Human-CLAW/HumanCLAW
-    talk: /talks/humanclaw/
 - title: 'ThinkMorph: Emergent Properties in Multimodal Interleaved Chain-of-Thought Reasoning'
   url: https://arxiv.org/abs/2510.27492
   authors: Jiawei Gu*, Yunzhuo Hao*, Huichen Will Wang*, Linjie Li*, Michael Qizhe Shieh, Yejin Choi, Ranjay Krishna, Yu Cheng
